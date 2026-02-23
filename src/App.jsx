@@ -1056,17 +1056,17 @@ function Portfolio() {
   const [activeProject, setActiveProject] = useState(null);
   const [hoverChip, setHoverChip] = useState(null);
   const [typed, setTyped] = useState("");
-  const titles = ["Data Scientist.", "ML Engineer.", "Full-Stack Dev.", "Problem Solver."];
+  const titles = ["Data Scientist", "ML Engineer", "Full Stack Dev", "NLP Specialist", "AI Builder", "Problem Solver", "Python Dev", "Big Data Eng"];
   const [titleIdx, setTitleIdx] = useState(0);
   const [charIdx, setCharIdx] = useState(0);
   const [deleting, setDeleting] = useState(false);
 
   useEffect(() => {
     const current = titles[titleIdx];
-    const speed = deleting ? 40 : 80;
+    const speed = deleting ? 30 : 65;
     const t = setTimeout(() => {
       if (!deleting && charIdx < current.length) { setTyped(current.slice(0, charIdx + 1)); setCharIdx(c => c + 1); }
-      else if (!deleting && charIdx === current.length) { setTimeout(() => setDeleting(true), 1800); }
+      else if (!deleting && charIdx === current.length) { setTimeout(() => setDeleting(true), 1400); }
       else if (deleting && charIdx > 0) { setTyped(current.slice(0, charIdx - 1)); setCharIdx(c => c - 1); }
       else { setDeleting(false); setTitleIdx(i => (i + 1) % titles.length); }
     }, speed);
@@ -1238,80 +1238,169 @@ function Portfolio() {
       </nav>
 
             {/* HERO */}
-      <section style={{ minHeight: isMobile ? "100svh" : "100vh", display: "flex", alignItems: "center", position: "relative", overflow: "hidden", padding: `${isMobile ? "40px" : "60px"} ${px_outer} ${isMobile ? "80px" : "80px"}` }}>
-
-
-        {/* ── Shooting stars ── */}
+      <section style={{
+        minHeight: "100svh",
+        position: "relative",
+        overflow: "hidden",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: isMobile ? "space-between" : "center",
+      }}>
         <ShootingStars />
 
-        {/* ── Content ── */}
-        <div style={{ position:"relative", zIndex:5, maxWidth: isMobile ? "100%" : isTablet ? 500 : 680, width:"100%", paddingTop: 0 }}>
+        {/* ── Profile image — absolute top-right ── */}
+        <div style={{
+          position: "absolute",
+          top: 0,
+          right: 0,
+          width: isMobile ? "56%" : isTablet ? "46%" : "42%",
+          height: isMobile ? "55%" : "100%",
+          zIndex: 1,
+          pointerEvents: "none",
+        }}>
+          {/* bottom fade */}
+          <div style={{
+            position:"absolute", bottom:0, left:0, right:0,
+            height: isMobile ? "140px" : "60px",
+            background:"linear-gradient(to bottom, transparent, #070710)",
+            zIndex:2,
+          }}/>
+          {/* left fade */}
+          <div style={{
+            position:"absolute", top:0, left:0, bottom:0,
+            width:"50px",
+            background:"linear-gradient(to right, #070710, transparent)",
+            zIndex:2,
+          }}/>
+          <img src={PROFILE_IMG} alt="Joshua Gashan" style={{
+            width:"100%", height:"100%",
+            objectFit:"contain",
+            objectPosition: isMobile ? "top right" : "bottom right",
+            mixBlendMode:"multiply",
+            filter:"contrast(1.05) brightness(1.0)",
+            opacity: isMobile ? 0.85 : 0.88,
+          }}/>
+        </div>
 
-          <h1 style={{ fontSize: isMobile ? "clamp(46px,14vw,70px)" : isTablet ? "clamp(54px,9vw,80px)" : isTV ? "clamp(80px,7vw,130px)" : "clamp(54px,9vw,100px)", fontWeight:900, lineHeight:0.95, letterSpacing:-3, marginBottom:16 }}>
-            <span style={{ display:"block", color:"#fff", textShadow:"0 0 40px rgba(255,255,255,0.15)" }}>Joshua</span>
-            <span style={{ display:"block", background:"linear-gradient(135deg,#00f5d4 0%,#a855f7 50%,#ff2d78 100%)", backgroundSize:"200% auto", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", animation:"shimmer 4s linear infinite", filter:"drop-shadow(0 0 20px rgba(168,85,247,0.4))" }}>Gashan.</span>
+        {/* ── TOP AREA: name + typewriter (overlaps photo) ── */}
+        <div style={{
+          position:"relative", zIndex:5,
+          padding: isMobile
+            ? "90px 22px 0"
+            : isTablet ? "0 40px" : `0 ${px_outer}`,
+          flex: isMobile ? "0 0 auto" : "unset",
+        }}>
+          {/* Name */}
+          <h1 style={{
+            fontSize: isMobile ? "clamp(46px,13vw,64px)" : isTablet ? "clamp(54px,9vw,80px)" : isTV ? "clamp(80px,7vw,130px)" : "clamp(60px,7vw,100px)",
+            fontWeight:900, letterSpacing:-3, lineHeight:0.92,
+            marginBottom: isMobile ? 10 : 16,
+          }}>
+            <span style={{ color:"#fff", display:"block" }}>Joshua</span>
+            <span style={{
+              display:"block",
+              background:"linear-gradient(135deg,#00f5d4 0%,#a855f7 50%,#ff2d78 100%)",
+              backgroundSize:"200% auto",
+              WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent",
+              animation:"shimmer 4s linear infinite",
+              filter:"drop-shadow(0 0 20px rgba(168,85,247,0.4))",
+            }}>Gashan.</span>
           </h1>
 
-          <div style={{ fontSize: isMobile ? 16 : isTV ? 28 : 22, fontWeight:600, color:"#888", marginBottom:16, minHeight: isMobile ? 28 : 36, letterSpacing:-0.5 }}>
-            {typed}<span style={{ animation:"blink 1s infinite", color:"#00f5d4" }}>|</span>
+          {/* Typewriter */}
+          <div style={{ marginBottom:0, minHeight: isMobile ? 34 : 50 }}>
+            <div style={{ display:"inline-flex", alignItems:"center" }}>
+              <span style={{ fontSize: isMobile ? 22 : 30, fontWeight:300, color:"rgba(0,245,212,0.3)" }}>{"<"}</span>
+              <span style={{
+                fontSize: isMobile ? 15 : isTV ? 34 : 22,
+                fontWeight:800, letterSpacing:-0.5,
+                background:"linear-gradient(135deg,#fff,rgba(255,255,255,0.75))",
+                WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent",
+                minWidth: isMobile ? 120 : 200, display:"inline-block",
+              }}>{typed}
+                <span style={{
+                  display:"inline-block", width:2,
+                  height: isMobile ? 15 : 22,
+                  background:"#00f5d4", marginLeft:2, verticalAlign:"middle",
+                  borderRadius:2, animation:"blink 0.85s step-end infinite",
+                  boxShadow:"0 0 8px #00f5d4", WebkitTextFillColor:"initial",
+                }}/>
+              </span>
+              <span style={{ fontSize: isMobile ? 22 : 30, fontWeight:300, color:"rgba(168,85,247,0.3)", marginLeft:3 }}>{" />"}</span>
+            </div>
           </div>
+        </div>
 
-          <p style={{ fontSize: isMobile ? 14 : isTV ? 18 : 15, color:"#556", maxWidth:460, lineHeight:1.8, marginBottom: isMobile ? 32 : 44 }}>
-            BSc (Hons) Data Science graduate building intelligent ML systems & powerful full-stack web applications from Sri Lanka.
+        {/* ── BOTTOM AREA: bio + buttons + stats ── */}
+        <div style={{
+          position:"relative", zIndex:5,
+          padding: isMobile
+            ? "0 22px 20px"
+            : isTablet ? "0 40px" : `0 ${px_outer}`,
+          flex: isMobile ? "0 0 auto" : "unset",
+          marginTop: isMobile ? "auto" : 0, transform: isMobile ? "translateY(-120px)" : "none",
+          paddingTop: isMobile ? 0 : 0,
+        }}>
+          {/* Bio */}
+          <p style={{
+            fontSize: isMobile ? 13 : isTV ? 18 : 15,
+            color:"#667", lineHeight:1.75,
+            maxWidth: isMobile ? "80%" : isTablet ? 380 : 460,
+            marginBottom: isMobile ? 20 : 36,
+          }}>
+            BSc (Hons) Data Science graduate building intelligent ML systems &amp; powerful full-stack web applications from Sri Lanka.
           </p>
 
-          <div style={{ display:"flex", gap:10, flexWrap:"wrap", alignItems:"center", flexDirection: isMobile ? "column" : "row" }}>
-            <a href="#work" className="glow-btn" style={{ padding: isMobile ? "13px 24px" : "14px 32px", background:"linear-gradient(135deg,#00f5d4,#00c4a9)", color:"#070710", fontWeight:700, fontSize:11, letterSpacing:2, textTransform:"uppercase", borderRadius:4, display:"inline-flex", alignItems:"center", gap:8, transition:"all 0.3s", boxShadow:"0 0 20px #00f5d444", width: isMobile ? "100%" : "auto", justifyContent:"center" }}>
-              View My Work <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          {/* Buttons */}
+          <style>{`.cta-btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;border-radius:10px;transition:all 0.3s cubic-bezier(0.34,1.56,0.64,1);cursor:pointer;}.cta-btn:hover{transform:translateY(-2px);}`}</style>
+          <div style={{
+            display:"flex", gap:10,
+            flexDirection: isMobile ? "column" : "row",
+            marginBottom: isMobile ? 28 : 52,
+            maxWidth: isMobile ? "100%" : "auto",
+          }}>
+            <a href="mailto:Joshuagashan@gmail.com" className="cta-btn" style={{
+              padding:"13px 26px",
+              background:"rgba(168,85,247,0.08)", color:"#a855f7",
+              border:"1px solid rgba(168,85,247,0.45)", backdropFilter:"blur(12px)",
+              boxShadow:"0 0 20px rgba(168,85,247,0.12), inset 0 1px 0 rgba(168,85,247,0.2)",
+            }}
+              onMouseEnter={e=>{e.currentTarget.style.boxShadow="0 0 32px rgba(168,85,247,0.3)";e.currentTarget.style.borderColor="rgba(168,85,247,0.85)";e.currentTarget.style.background="rgba(168,85,247,0.15)";}}
+              onMouseLeave={e=>{e.currentTarget.style.boxShadow="0 0 20px rgba(168,85,247,0.12)";e.currentTarget.style.borderColor="rgba(168,85,247,0.45)";e.currentTarget.style.background="rgba(168,85,247,0.08)";}}>
+              Contact Me
             </a>
-            <a href="mailto:Joshuagashan@gmail.com" className="outline-btn" style={{ padding: isMobile ? "13px 24px" : "14px 32px", background:"transparent", color:"#ccc", border:"1px solid #333", fontWeight:600, fontSize:11, letterSpacing:2, textTransform:"uppercase", borderRadius:4, display:"inline-block", transition:"all 0.3s", width: isMobile ? "100%" : "auto", textAlign:"center" }}>Contact Me</a>
-            <a href={CV_PDF} download="Joshua_Gashan_CV.pdf" className="cv-btn" style={{ padding: isMobile ? "13px 24px" : "14px 32px", background:"transparent", color:"#555", border:"1px solid #222", fontWeight:600, fontSize:11, letterSpacing:2, textTransform:"uppercase", borderRadius:4, display:"inline-flex", alignItems:"center", gap:8, transition:"all 0.3s", width: isMobile ? "100%" : "auto", justifyContent:"center" }}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            <a href={CV_PDF} download="Joshua_Gashan_CV.pdf" className="cta-btn" style={{
+              padding:"13px 26px",
+              background:"rgba(255,255,255,0.04)", color:"rgba(255,255,255,0.6)",
+              border:"1px solid rgba(255,255,255,0.12)", backdropFilter:"blur(12px)",
+              boxShadow:"inset 0 1px 0 rgba(255,255,255,0.08)",
+            }}
+              onMouseEnter={e=>{e.currentTarget.style.color="#fff";e.currentTarget.style.borderColor="rgba(255,255,255,0.3)";e.currentTarget.style.background="rgba(255,255,255,0.08)";}}
+              onMouseLeave={e=>{e.currentTarget.style.color="rgba(255,255,255,0.6)";e.currentTarget.style.borderColor="rgba(255,255,255,0.12)";e.currentTarget.style.background="rgba(255,255,255,0.04)";}}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
               Download CV
-            </a>
-            <a href="https://client-portal" className="glow-btn" style={{ padding: isMobile ? "13px 24px" : "14px 32px", background:"linear-gradient(135deg,#a855f7,#7c3aed)", color:"#fff", border:"none", fontWeight:700, fontSize:11, letterSpacing:2, textTransform:"uppercase", borderRadius:4, display:"inline-flex", alignItems:"center", gap:8, transition:"all 0.3s", width: isMobile ? "100%" : "auto", justifyContent:"center", boxShadow:"0 0 20px #a855f744" }}>
-              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              Work With Me
             </a>
           </div>
 
-          <div style={{ display:"flex", gap: isMobile ? 20 : 40, marginTop: isMobile ? 40 : 56, paddingTop: isMobile ? 28 : 40, borderTop:"1px solid #ffffff08", flexWrap:"wrap" }}>
-            {[{end:5,suffix:"+",label:"Projects Built"},{end:3,suffix:"",label:"Languages"},{end:2,suffix:"",label:"Universities"},{text:"ML+Web",label:"Expertise"}].map(s => (
+          {/* Stats */}
+          <div style={{
+            display:"flex", gap: isMobile ? 24 : 40,
+            paddingTop: isMobile ? 20 : 28,
+            borderTop:"1px solid #ffffff08",
+            flexWrap:"wrap",
+          }}>
+            {[{end:5,suffix:"+",label:"Projects Built"},{end:3,suffix:"",label:"Languages"},{end:2,suffix:"",label:"Universities"},{text:"ML+Web",label:"Expertise"}].map(s=>(
               <div key={s.label}>
                 <div style={{ fontSize: isMobile ? 20 : isTV ? 32 : 26, fontWeight:900, letterSpacing:-1, background:"linear-gradient(135deg,#fff,#888)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>
-                  {s.end !== undefined ? <CountUp end={s.end} suffix={s.suffix} duration={1800} /> : s.text}
+                  {s.end !== undefined ? <CountUp end={s.end} suffix={s.suffix} duration={1800}/> : s.text}
                 </div>
-                <div style={{ fontSize:10, color:"#444", letterSpacing:1, textTransform:"uppercase", marginTop:2 }}>{s.label}</div>
+                <div style={{ fontSize:9, letterSpacing:2, textTransform:"uppercase", color:"#333", marginTop:3 }}>{s.label}</div>
               </div>
             ))}
           </div>
         </div>
 
-        {/* ── Profile Image — fully responsive ── */}
-        <div style={{
-          position: "absolute",
-          right: 0,
-          top: 0,
-          width: isMobile ? "50%" : isTablet ? "45%" : "42%",
-          height: isMobile ? "280px" : "100%",
-          zIndex: 1,
-          pointerEvents: "none",
-          opacity: isMobile ? 0.75 : 0.88,
-        }}>
-
-          <img src={PROFILE_IMG} alt="Joshua Gashan" style={{
-            width: "100%",
-            height: "100%",
-            objectFit: "contain",
-            objectPosition: isMobile ? "top center" : "bottom center",
-            mixBlendMode: "multiply",
-            filter: "contrast(1.05) brightness(1.0)",
-          }} />
-        </div>
-
-        {/* ── Floating Tech Tags ── */}
-        <FloatingTags isMobile={isMobile} />
-
+        <FloatingTags isMobile={isMobile}/>
       </section>
       {/* ABOUT */}
       <section id="about" style={{ padding: `${section_py} ${px_outer}`, position: "relative", overflow: "hidden", borderTop: "1px solid #ffffff06" }}>
