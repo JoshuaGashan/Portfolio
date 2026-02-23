@@ -1,7 +1,7 @@
 {
   "name": "my-portfolio-next-gen",
   "version": "0.1.0",
-  "homepage": "https://JoshuaGashan.github.io/My-Portfolio-Next-Gen/",
+  "homepage": "https://JoshuaGashan.github.io/Portfolio",
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0"
