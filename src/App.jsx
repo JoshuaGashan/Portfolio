@@ -1142,14 +1142,14 @@ function Portfolio() {
         {/* Logo + lightbox */}
         <div style={{ position:"relative", display:"flex", alignItems:"center", gap:10 }}>
           {/* JG text */}
-          <div style={{ fontWeight:900, fontSize:20, letterSpacing:-1, background:"linear-gradient(135deg,#00f5d4,#a855f7)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>JG</div>
+          <div style={{ fontWeight:900, fontSize: isMobile ? 20 : 26, letterSpacing:-1, background:"linear-gradient(135deg,#00f5d4,#a855f7)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>JG</div>
           {/* Logo image */}
           <img
             src={LOGO_IMG}
             alt="Joshua Gashan"
             onClick={() => setLogoOpen(true)}
             style={{
-              width: 42, height: 42, borderRadius:"50%",
+              width: 30, height: 30, borderRadius:"50%",
               objectFit:"cover", cursor:"pointer",
               border:"2px solid rgba(255,255,255,0.12)",
               boxShadow:"0 0 14px rgba(0,245,212,0.25)",
@@ -1221,7 +1221,7 @@ function Portfolio() {
         ) : (
           <div style={{ display:"flex", gap: isTablet ? 20 : 36, alignItems:"center" }}>
             {navLinks.map(([n,h]) => (
-              <a key={n} href={h} style={{ fontSize:11, letterSpacing:2, textTransform:"uppercase", color:"#555", transition:"color 0.2s", textDecoration:"none" }}
+              <a key={n} href={h} style={{ fontSize: isMobile ? 10 : 13, letterSpacing:2, textTransform:"uppercase", color:"rgba(255,255,255,0.75)", fontWeight:600, transition:"color 0.2s", textDecoration:"none" }}
                 onMouseEnter={e => e.target.style.color="#00f5d4"} onMouseLeave={e => e.target.style.color="#555"}>{n}</a>
             ))}
             <div style={{ width:1, height:16, background:"#222" }} />
@@ -1251,27 +1251,14 @@ function Portfolio() {
         {/* ── Profile image — absolute top-right ── */}
         <div style={{
           position: "absolute",
-          top: 0,
-          right: 0,
-          width: isMobile ? "56%" : isTablet ? "46%" : "42%",
+          top: isMobile ? 0 : -50, right: isMobile ? 0 : 80,
+          width: isMobile ? "56%" : isTablet ? "40%" : "34%",
           height: isMobile ? "55%" : "100%",
           zIndex: 1,
           pointerEvents: "none",
         }}>
-          {/* bottom fade */}
-          <div style={{
-            position:"absolute", bottom:0, left:0, right:0,
-            height: isMobile ? "140px" : "60px",
-            background:"linear-gradient(to bottom, transparent, #070710)",
-            zIndex:2,
-          }}/>
-          {/* left fade */}
-          <div style={{
-            position:"absolute", top:0, left:0, bottom:0,
-            width:"50px",
-            background:"linear-gradient(to right, #070710, transparent)",
-            zIndex:2,
-          }}/>
+          <div style={{ position:"absolute", bottom:0, left:0, right:0, height:isMobile?"140px":"60px", background:"linear-gradient(to bottom, transparent, #070710)", zIndex:2 }}/>
+          <div style={{ position:"absolute", top:0, left:0, bottom:0, width:"50px", background:"linear-gradient(to right, #070710, transparent)", zIndex:2 }}/>
           <img src={PROFILE_IMG} alt="Joshua Gashan" style={{
             width:"100%", height:"100%",
             objectFit:"contain",
@@ -1282,17 +1269,14 @@ function Portfolio() {
           }}/>
         </div>
 
-        {/* ── TOP AREA: name + typewriter (overlaps photo) ── */}
+        {/* ── TOP: Name + Typewriter ── */}
         <div style={{
           position:"relative", zIndex:5,
-          padding: isMobile
-            ? "90px 22px 0"
-            : isTablet ? "0 40px" : `0 ${px_outer}`,
+          padding: isMobile ? "90px 22px 0" : isTablet ? "0 40px" : `0 ${px_outer}`,
           flex: isMobile ? "0 0 auto" : "unset",
         }}>
-          {/* Name */}
           <h1 style={{
-            fontSize: isMobile ? "clamp(46px,13vw,64px)" : isTablet ? "clamp(54px,9vw,80px)" : isTV ? "clamp(80px,7vw,130px)" : "clamp(60px,7vw,100px)",
+            fontSize: isMobile ? "clamp(46px,13vw,64px)" : isTablet ? "clamp(54px,9vw,80px)" : isTV ? "clamp(80px,7vw,130px)" : "clamp(68px,8vw,110px)",
             fontWeight:900, letterSpacing:-3, lineHeight:0.92,
             marginBottom: isMobile ? 10 : 16,
           }}>
@@ -1319,8 +1303,7 @@ function Portfolio() {
                 minWidth: isMobile ? 120 : 200, display:"inline-block",
               }}>{typed}
                 <span style={{
-                  display:"inline-block", width:2,
-                  height: isMobile ? 15 : 22,
+                  display:"inline-block", width:2, height: isMobile ? 15 : 22,
                   background:"#00f5d4", marginLeft:2, verticalAlign:"middle",
                   borderRadius:2, animation:"blink 0.85s step-end infinite",
                   boxShadow:"0 0 8px #00f5d4", WebkitTextFillColor:"initial",
@@ -1331,21 +1314,51 @@ function Portfolio() {
           </div>
         </div>
 
-        {/* ── BOTTOM AREA: bio + buttons + stats ── */}
+        {/* ── MIDDLE (mobile only): Stats — vertical stacked ── */}
+        {isMobile && (
+          <div style={{
+            position:"relative", zIndex:5,
+            padding:"0 22px",
+            flex:"0 0 auto",
+            marginTop:20,
+            display:"flex",
+            flexDirection:"column",
+            gap:0,
+          }}>
+            {[
+              {end:5,suffix:"+",label:"Projects Built"},
+              {end:3,suffix:"",label:"Languages"},
+              
+              {text:"ML+Web",label:"Expertise"},
+            ].map((s,i)=>(
+              <div key={s.label} style={{
+                display:"flex", flexDirection:"column",
+                padding:"5px 0",
+              }}>
+                <div style={{
+                  fontSize:30, fontWeight:900, letterSpacing:-1.5, lineHeight:1,
+                  color:"#fff", marginBottom:3,
+                }}>
+                  {s.end !== undefined ? <CountUp end={s.end} suffix={s.suffix} duration={1800}/> : s.text}
+                </div>
+                <div style={{ fontSize:10, letterSpacing:2, textTransform:"uppercase", color:"#445", fontWeight:600 }}>{s.label}</div>
+              </div>
+            ))}
+          </div>
+        )}
+        {/* ── BOTTOM: Bio + Buttons + Stats (desktop) ── */}
         <div style={{
           position:"relative", zIndex:5,
-          padding: isMobile
-            ? "0 22px 20px"
-            : isTablet ? "0 40px" : `0 ${px_outer}`,
+          padding: isMobile ? "0 22px 36px" : isTablet ? "0 40px" : `0 ${px_outer}`,
           flex: isMobile ? "0 0 auto" : "unset",
-          marginTop: isMobile ? "auto" : 0, transform: isMobile ? "translateY(-120px)" : "none",
-          paddingTop: isMobile ? 0 : 0,
+          marginTop: isMobile ? "auto" : 0,
+          transform: isMobile ? "translateY(-200px)" : "none",
         }}>
           {/* Bio */}
           <p style={{
             fontSize: isMobile ? 13 : isTV ? 18 : 15,
             color:"#667", lineHeight:1.75,
-            maxWidth: isMobile ? "80%" : isTablet ? 380 : 460,
+            maxWidth: isMobile ? "100%" : isTablet ? 400 : 520,
             marginBottom: isMobile ? 20 : 36,
           }}>
             BSc (Hons) Data Science graduate building intelligent ML systems &amp; powerful full-stack web applications from Sri Lanka.
@@ -1356,7 +1369,7 @@ function Portfolio() {
           <div style={{
             display:"flex", gap:10,
             flexDirection: isMobile ? "column" : "row",
-            marginBottom: isMobile ? 28 : 52,
+            marginBottom: isMobile ? 0 : 52,
             maxWidth: isMobile ? "100%" : "auto",
           }}>
             <a href="mailto:Joshuagashan@gmail.com" className="cta-btn" style={{
@@ -1382,22 +1395,24 @@ function Portfolio() {
             </a>
           </div>
 
-          {/* Stats */}
-          <div style={{
-            display:"flex", gap: isMobile ? 24 : 40,
-            paddingTop: isMobile ? 20 : 28,
-            borderTop:"1px solid #ffffff08",
-            flexWrap:"wrap",
-          }}>
-            {[{end:5,suffix:"+",label:"Projects Built"},{end:3,suffix:"",label:"Languages"},{end:2,suffix:"",label:"Universities"},{text:"ML+Web",label:"Expertise"}].map(s=>(
-              <div key={s.label}>
-                <div style={{ fontSize: isMobile ? 20 : isTV ? 32 : 26, fontWeight:900, letterSpacing:-1, background:"linear-gradient(135deg,#fff,#888)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>
-                  {s.end !== undefined ? <CountUp end={s.end} suffix={s.suffix} duration={1800}/> : s.text}
+          {/* Stats — desktop only */}
+          {!isMobile && (
+            <div style={{
+              display:"flex", gap:40,
+              paddingTop:28,
+              borderTop:"1px solid #ffffff08",
+              flexWrap:"wrap",
+            }}>
+              {[{end:5,suffix:"+",label:"Projects Built"},{end:3,suffix:"",label:"Languages"},{text:"ML+Web",label:"Expertise"}].map(s=>(
+                <div key={s.label}>
+                  <div style={{ fontSize: isTV ? 32 : 26, fontWeight:900, letterSpacing:-1, background:"linear-gradient(135deg,#fff,#888)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>
+                    {s.end !== undefined ? <CountUp end={s.end} suffix={s.suffix} duration={1800}/> : s.text}
+                  </div>
+                  <div style={{ fontSize:9, letterSpacing:2, textTransform:"uppercase", color:"#333", marginTop:3 }}>{s.label}</div>
                 </div>
-                <div style={{ fontSize:9, letterSpacing:2, textTransform:"uppercase", color:"#333", marginTop:3 }}>{s.label}</div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
         </div>
 
         <FloatingTags isMobile={isMobile}/>
