@@ -1252,7 +1252,7 @@ function Portfolio() {
         <div style={{
           position: "absolute",
           top: isMobile ? 0 : -50, right: isMobile ? 0 : 80,
-          width: isMobile ? "56%" : isTablet ? "40%" : "34%",
+          width: isMobile ? "56%" : isTablet ? "40%" : "28%",
           height: isMobile ? "55%" : "100%",
           zIndex: 1,
           pointerEvents: "none",
@@ -1276,7 +1276,7 @@ function Portfolio() {
           flex: isMobile ? "0 0 auto" : "unset",
         }}>
           <h1 style={{
-            fontSize: isMobile ? "clamp(46px,13vw,64px)" : isTablet ? "clamp(54px,9vw,80px)" : isTV ? "clamp(80px,7vw,130px)" : "clamp(68px,8vw,110px)",
+            fontSize: isMobile ? "clamp(46px,13vw,64px)" : isTablet ? "clamp(54px,9vw,80px)" : isTV ? "clamp(80px,7vw,130px)" : "clamp(74px,9vw,120px)",
             fontWeight:900, letterSpacing:-3, lineHeight:0.92,
             marginBottom: isMobile ? 10 : 16,
           }}>
@@ -1356,16 +1356,17 @@ function Portfolio() {
         }}>
           {/* Bio */}
           <p style={{
-            fontSize: isMobile ? 13 : isTV ? 18 : 15,
+            fontSize: isMobile ? 13 : isTV ? 18 : 16,
             color:"#667", lineHeight:1.75,
-            maxWidth: isMobile ? "100%" : isTablet ? 400 : 520,
+            maxWidth: isMobile ? "100%" : isTablet ? 400 : 580,
             marginBottom: isMobile ? 20 : 36,
+            marginTop: isMobile ? 0 : 20,
           }}>
             BSc (Hons) Data Science graduate building intelligent ML systems &amp; powerful full-stack web applications from Sri Lanka.
           </p>
 
           {/* Buttons */}
-          <style>{`.cta-btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:11px;letter-spacing:2px;text-transform:uppercase;border-radius:10px;transition:all 0.3s cubic-bezier(0.34,1.56,0.64,1);cursor:pointer;}.cta-btn:hover{transform:translateY(-2px);}`}</style>
+          <style>{`.cta-btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;border-radius:10px;transition:all 0.3s cubic-bezier(0.34,1.56,0.64,1);cursor:pointer;}.cta-btn:hover{transform:translateY(-2px);}`}</style>
           <div style={{
             display:"flex", gap:10,
             flexDirection: isMobile ? "column" : "row",
@@ -1373,7 +1374,7 @@ function Portfolio() {
             maxWidth: isMobile ? "100%" : "auto",
           }}>
             <a href="mailto:Joshuagashan@gmail.com" className="cta-btn" style={{
-              padding:"13px 26px",
+              padding: isMobile ? "13px 26px" : "15px 36px",
               background:"rgba(168,85,247,0.08)", color:"#a855f7",
               border:"1px solid rgba(168,85,247,0.45)", backdropFilter:"blur(12px)",
               boxShadow:"0 0 20px rgba(168,85,247,0.12), inset 0 1px 0 rgba(168,85,247,0.2)",
@@ -1383,7 +1384,7 @@ function Portfolio() {
               Contact Me
             </a>
             <a href={CV_PDF} download="Joshua_Gashan_CV.pdf" className="cta-btn" style={{
-              padding:"13px 26px",
+              padding: isMobile ? "13px 26px" : "15px 36px",
               background:"rgba(255,255,255,0.04)", color:"rgba(255,255,255,0.6)",
               border:"1px solid rgba(255,255,255,0.12)", backdropFilter:"blur(12px)",
               boxShadow:"inset 0 1px 0 rgba(255,255,255,0.08)",
@@ -1405,7 +1406,7 @@ function Portfolio() {
             }}>
               {[{end:5,suffix:"+",label:"Projects Built"},{end:3,suffix:"",label:"Languages"},{text:"ML+Web",label:"Expertise"}].map(s=>(
                 <div key={s.label}>
-                  <div style={{ fontSize: isTV ? 32 : 26, fontWeight:900, letterSpacing:-1, background:"linear-gradient(135deg,#fff,#888)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>
+                  <div style={{ fontSize: isTV ? 32 : 30, fontWeight:900, letterSpacing:-1, background:"linear-gradient(135deg,#fff,#888)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>
                     {s.end !== undefined ? <CountUp end={s.end} suffix={s.suffix} duration={1800}/> : s.text}
                   </div>
                   <div style={{ fontSize:9, letterSpacing:2, textTransform:"uppercase", color:"#333", marginTop:3 }}>{s.label}</div>
