@@ -1089,7 +1089,7 @@ function Portfolio() {
 
   const px2 = mouse.x - 0.5, py2 = mouse.y - 0.5;
 
-  const navLinks = [["About","#about"],["Work","#work"],["Skills","#skills"]];
+  const navLinks = [["Home","#hero"],["About","#about"],["Services","#services"],["Projects","#projects"],["Contact","#contact"]];
 
 
 
@@ -1136,7 +1136,7 @@ function Portfolio() {
             {/* NAV */}
       <nav style={{
         position: "static",
-        height: 64, display: "flex", alignItems: "center",
+        height: 70, display: "flex", alignItems: "center",
         justifyContent: "space-between",
         padding: `0 ${px_outer}`,
         background: "transparent",
@@ -1144,14 +1144,14 @@ function Portfolio() {
         {/* Logo + lightbox */}
         <div style={{ position:"relative", display:"flex", alignItems:"center", gap:10 }}>
           {/* JG text */}
-          <div style={{ fontWeight:900, fontSize: isMobile ? 20 : 26, letterSpacing:-1, background:"linear-gradient(135deg,#00f5d4,#a855f7)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>JG</div>
+          <div style={{ fontWeight:900, fontSize: isMobile ? 20 : 29, letterSpacing:-1, background:"linear-gradient(135deg,#00f5d4,#a855f7)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>JG</div>
           {/* Logo image */}
           <img
             src={LOGO_IMG}
             alt="Joshua Gashan"
             onClick={() => setLogoOpen(true)}
             style={{
-              width: 30, height: 30, borderRadius:"50%",
+              width: 33, height: 33, borderRadius:"50%",
               objectFit:"cover", cursor:"pointer",
               border:"2px solid rgba(255,255,255,0.12)",
               boxShadow:"0 0 14px rgba(0,245,212,0.25)",
@@ -1223,7 +1223,7 @@ function Portfolio() {
         ) : (
           <div style={{ display:"flex", gap: isTablet ? 20 : 36, alignItems:"center" }}>
             {navLinks.map(([n,h]) => (
-              <a key={n} href={h} style={{ fontSize: isMobile ? 10 : 13, letterSpacing:2, textTransform:"uppercase", color:"rgba(255,255,255,0.75)", fontWeight:600, transition:"color 0.2s", textDecoration:"none" }}
+              <a key={n} href={h} style={{ fontSize: isMobile ? 10 : 14, letterSpacing:2, textTransform:"uppercase", color:"rgba(255,255,255,0.75)", fontWeight:600, transition:"color 0.2s", textDecoration:"none" }}
                 onMouseEnter={e => e.target.style.color="#00f5d4"} onMouseLeave={e => e.target.style.color="#555"}>{n}</a>
             ))}
             <div style={{ width:1, height:20, background:"#222" }} />
@@ -1232,7 +1232,7 @@ function Portfolio() {
                 style={{ color:"#555", display:"flex", transition:"color 0.2s" }}
                 onMouseEnter={e => { e.currentTarget.style.color="#00f5d4"; }}
                 onMouseLeave={e => { e.currentTarget.style.color="#555"; }}>
-                <SocialIcon k={s.key} size={16} />
+                <SocialIcon k={s.key} size={18} />
               </a>
             ))}
           </div>
@@ -1240,7 +1240,7 @@ function Portfolio() {
       </nav>
 
             {/* HERO */}
-      <section style={{
+      <section id="hero" style={{
         minHeight: "100svh",
         position: "relative",
         overflow: "hidden",
@@ -1593,7 +1593,7 @@ function Portfolio() {
         </div>
       </section>
       {/* WHAT I BUILD */}
-      <section style={{ padding: `${section_py} ${px_outer}`, background: "#050510", position: "relative", overflow: "hidden", borderTop: "1px solid #ffffff06" }}>
+      <section id="services" style={{ padding: `${section_py} ${px_outer}`, background: "#050510", position: "relative", overflow: "hidden", borderTop: "1px solid #ffffff06" }}>
         <svg style={{ position:"absolute", width:0, height:0 }}>
           <defs>
             <filter id="liquid-glass" x="-20%" y="-20%" width="140%" height="140%" colorInterpolationFilters="sRGB">
@@ -1627,7 +1627,7 @@ function Portfolio() {
       </section>
 
       {/* PROJECTS */}
-      <section id="work" style={{ padding: `${section_py} ${px_outer}`, borderTop: "1px solid #ffffff06" }}>
+      <section id="projects" style={{ padding: `${section_py} ${px_outer}`, borderTop: "1px solid #ffffff06" }}>
         <div style={{ maxWidth: maxW, margin: "0 auto" }}>
           <FadeUp style={{ marginBottom: isMobile ? 36 : 64 }}>
             <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 16 }}>
@@ -1673,13 +1673,13 @@ function Portfolio() {
       </section>
 
       {/* CODE WINDOW SECTION */}
-      <section style={{ padding: `${section_py} ${px_outer}`, position:"relative", overflow:"hidden", borderTop:"1px solid #ffffff06" }}>
+      <section id="skills" style={{ padding: `${section_py} ${px_outer}`, position:"relative", overflow:"hidden", borderTop:"1px solid #ffffff06" }}>
         <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse 60% 50% at 50% 50%, rgba(168,85,247,0.06), transparent)", pointerEvents:"none" }} />
         <div style={{ maxWidth: maxW, margin:"0 auto", position:"relative", zIndex:2 }}>
           <FadeUp style={{ marginBottom: isMobile ? 28 : 40, textAlign:"center" }}>
             <div style={{ display:"flex", alignItems:"center", gap:16, marginBottom:12, justifyContent:"center" }}>
               <div style={{ height:1, width:40, background:"linear-gradient(90deg,transparent,#a855f7)" }} />
-              <p style={{ fontSize:11, letterSpacing:5, textTransform:"uppercase", color:"#a855f7" }}>In Action</p>
+              <p style={{ fontSize:14, letterSpacing:5, textTransform:"uppercase", color:"#a855f7" }}>In Action</p>
               <div style={{ height:1, width:40, background:"linear-gradient(90deg,#a855f7,transparent)" }} />
             </div>
             <h2 style={{ fontSize: isMobile ? "clamp(34px,9vw,50px)" : "clamp(40px,5vw,62px)", fontWeight:900, letterSpacing:-2, color:"#fff" }}>
@@ -1702,25 +1702,25 @@ function Portfolio() {
 
       {/* SKILLS */}
       {/* FOOTER */}
-      <section style={{ padding: `${section_py} ${px_outer} ${isMobile ? "60px" : "80px"}`, textAlign:"center", position:"relative", overflow:"hidden", borderTop:"1px solid #ffffff06" }}>
+      <section id="contact" style={{ padding: `${section_py} ${px_outer} ${isMobile ? "60px" : "80px"}`, position:"relative", overflow:"hidden", textAlign:"center", position:"relative", overflow:"hidden", borderTop:"1px solid #ffffff06" }}>
         <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse 60% 60% at 50% 50%,#00f5d406,transparent)", pointerEvents:"none" }} />
-        <FadeUp>
-          <p style={{ fontSize:11, letterSpacing:5, textTransform:"uppercase", color:"#00f5d4", marginBottom:20 }}>Contact</p>
-          <h2 style={{ fontSize: isMobile ? "clamp(32px,10vw,54px)" : "clamp(40px,6vw,72px)", fontWeight:900, letterSpacing:-3, marginBottom:16, lineHeight:1 }}>
+        <FadeUp style={{ position:"relative", zIndex:1 }}>
+          <p style={{ fontSize:14, letterSpacing:5, textTransform:"uppercase", color:"#00f5d4", marginBottom:20 }}>Contact</p>
+          <h2 style={{ fontSize: isMobile ? "clamp(42px,13vw,70px)" : "clamp(72px,11vw,130px)", fontWeight:900, letterSpacing:-2, marginBottom:16, lineHeight:1 }}>
             Let's Build<br />
             <span style={{ background:"linear-gradient(135deg,#00f5d4,#a855f7,#ff2d78)", backgroundSize:"200% auto", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", animation:"shimmer 4s linear infinite" }}>Something.</span>
           </h2>
-          <p style={{ color:"#555", fontSize: isMobile ? 14 : 16, marginBottom:40, maxWidth:400, margin:"0 auto 40px" }}>Open to Data Science, ML Engineering & Full-Stack opportunities.</p>
+          <p style={{ color:"#555", fontSize: isMobile ? 18 : 21, marginBottom:40, maxWidth:400, margin:"0 auto 40px" }}>Open to Data Science, ML Engineering & Full-Stack opportunities.</p>
           <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:12, marginBottom:40 }}>
             <div style={{ display:"flex", gap:10, flexWrap:"wrap", justifyContent:"center", width:"100%" }}>
               {/* Gmail */}
-              <a href="mailto:Joshuagashan@gmail.com" style={{ padding:"12px 20px", background:"linear-gradient(135deg,#00f5d4,#00c4a9)", color:"#070710", fontWeight:700, fontSize:10, letterSpacing:1.5, textTransform:"uppercase", borderRadius:6, display:"inline-flex", alignItems:"center", gap:8, justifyContent:"center", boxShadow:"0 0 20px #00f5d433", textDecoration:"none", flex: isMobile ? "1 1 40%" : "0 0 auto" }}>
+              <a href="mailto:Joshuagashan@gmail.com" style={{ padding:"16px 26px", background:"linear-gradient(135deg,#00f5d4,#00c4a9)", color:"#070710", fontWeight:700, fontSize:10, letterSpacing:1.5, textTransform:"uppercase", borderRadius:6, display:"inline-flex", alignItems:"center", gap:8, justifyContent:"center", boxShadow:"0 0 20px #00f5d433", textDecoration:"none", flex: isMobile ? "1 1 40%" : "0 0 auto" }}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                 Gmail
               </a>
               {/* WhatsApp */}
               <a href="https://wa.me/94767159028?text=Hi%20Joshua!" target="_blank" rel="noopener noreferrer"
-                style={{ padding:"12px 20px", background:"linear-gradient(135deg,rgba(37,211,102,0.15),rgba(37,211,102,0.06))", color:"#25d366", fontWeight:700, fontSize:10, letterSpacing:1.5, textTransform:"uppercase", borderRadius:6, display:"inline-flex", alignItems:"center", gap:8, border:"1px solid rgba(37,211,102,0.28)", justifyContent:"center", boxShadow:"0 0 16px rgba(37,211,102,0.12)", textDecoration:"none", flex: isMobile ? "1 1 40%" : "0 0 auto", transition:"all 0.2s" }}
+                style={{ padding:"16px 26px", background:"linear-gradient(135deg,rgba(37,211,102,0.15),rgba(37,211,102,0.06))", color:"#25d366", fontWeight:700, fontSize:10, letterSpacing:1.5, textTransform:"uppercase", borderRadius:6, display:"inline-flex", alignItems:"center", gap:8, border:"1px solid rgba(37,211,102,0.28)", justifyContent:"center", boxShadow:"0 0 16px rgba(37,211,102,0.12)", textDecoration:"none", flex: isMobile ? "1 1 40%" : "0 0 auto", transition:"all 0.2s" }}
                 onMouseEnter={e=>{e.currentTarget.style.boxShadow="0 0 24px rgba(37,211,102,0.28)";}}
                 onMouseLeave={e=>{e.currentTarget.style.boxShadow="0 0 16px rgba(37,211,102,0.12)";}}>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -1741,26 +1741,261 @@ function Portfolio() {
                 LinkedIn
               </a>
             </div>
-            <div style={{ display:"flex", gap:10, justifyContent:"center" }}>
-              {SOCIAL.map(s => (
+            <style>{`
+              @keyframes iconBob0{0%,100%{transform:translateY(0px)}50%{transform:translateY(-8px)}}
+              @keyframes iconBob1{0%,100%{transform:translateY(-3px)}50%{transform:translateY(5px)}}
+              @keyframes iconBob2{0%,100%{transform:translateY(-5px)}50%{transform:translateY(3px)}}
+              @keyframes iconBob3{0%,100%{transform:translateY(2px)}50%{transform:translateY(-6px)}}
+            `}</style>
+            <div style={{ display:"flex", gap:14, justifyContent:"center" }}>
+              {SOCIAL.map((s, i) => (
                 <a key={s.key} href={s.url} target="_blank" rel="noopener noreferrer"
-                  style={{ width:44, height:44, borderRadius:10, border:"1px solid #1a1a2e", display:"flex", alignItems:"center", justifyContent:"center", color:"#444", transition:"all 0.2s", background:"rgba(255,255,255,0.02)" }}
-                  onMouseEnter={e => { e.currentTarget.style.color="#00f5d4"; e.currentTarget.style.borderColor="#00f5d430"; e.currentTarget.style.background="rgba(0,245,212,0.06)"; }}
-                  onMouseLeave={e => { e.currentTarget.style.color="#444"; e.currentTarget.style.borderColor="#1a1a2e"; e.currentTarget.style.background="rgba(255,255,255,0.02)"; }}>
-                  <SocialIcon k={s.key} size={17} />
+                  style={{
+                    width:48, height:48, borderRadius:12,
+                    border:"1px solid rgba(0,245,212,0.25)",
+                    display:"flex", alignItems:"center", justifyContent:"center",
+                    color:"rgba(0,245,212,0.7)", transition:"all 0.3s",
+                    background:"rgba(0,10,30,0.6)",
+                    backdropFilter:"blur(10px)",
+                    boxShadow:"0 4px 16px rgba(0,245,212,0.1)",
+                    animation:`iconBob${i} ${[3.2,2.8,3.5,3.0][i]}s ${[0,0.6,1.2,0.3][i]}s ease-in-out infinite`,
+                  }}
+                  onMouseEnter={e => { e.currentTarget.style.color="#00f5d4"; e.currentTarget.style.borderColor="rgba(0,245,212,0.7)"; e.currentTarget.style.boxShadow="0 6px 24px rgba(0,245,212,0.3)"; e.currentTarget.style.transform="scale(1.15)"; }}
+                  onMouseLeave={e => { e.currentTarget.style.color="rgba(0,245,212,0.7)"; e.currentTarget.style.borderColor="rgba(0,245,212,0.25)"; e.currentTarget.style.boxShadow="0 4px 16px rgba(0,245,212,0.1)"; e.currentTarget.style.transform=""; }}>
+                  <SocialIcon k={s.key} size={19} />
                 </a>
               ))}
             </div>
           </div>
           <div style={{ paddingTop:32, borderTop:"1px solid #ffffff06", textAlign:"center" }}>
-            <p style={{ fontSize:13, color:"#333", letterSpacing:0.5, lineHeight:1.8 }}>
+            <p style={{ fontSize:17, color:"#333", letterSpacing:0.5, lineHeight:1.8 }}>
               © {new Date().getFullYear()} Joshua Gashan. All rights reserved.
             </p>
           </div>
         </FadeUp>
+
+        {/* Ocean Wave — absolute background at bottom of contact */}
+        <div style={{
+          position:"absolute", bottom:0, left:0, right:0,
+          height:"100%",
+          pointerEvents:"auto",
+          zIndex:0,
+        }}>
+          <OceanWave />
+
+        </div>
       </section>
     </div>
   );
+}
+
+function OceanWave() {
+  const canvasRef = useRef(null);
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+    const ctx = canvas.getContext("2d");
+    let raf, t = 0;
+
+    const fish = [];
+
+    function spawnFish(cx, clickY) {
+      const H = canvas.height;
+      // Alternate direction: odd fish go left→right, even go right→left
+      const dir = fish.length % 2 === 0 ? 1 : -1;
+      fish.push({
+        x: cx + (Math.random() - 0.5) * 40,
+        y: clickY || H * 0.91,
+        vy: -(9 + Math.random() * 6),
+        vx: dir * (4 + Math.random() * 4),
+        gravity: 0.10,
+        size: 8 + Math.random() * 55,
+        color: `hsl(${160 + Math.random()*80},90%,${55+Math.random()*20}%)`,
+        alive: true,
+        splash: [],
+      });
+      const last = fish[fish.length-1];
+      for (let i = 0; i < 8; i++) {
+        last.splash.push({
+          x: last.x, y: clickY || H * 0.91,
+          vx: (Math.random()-0.5)*5,
+          vy: -(2+Math.random()*5),
+          life: 1,
+        });
+      }
+    }
+
+    canvas.addEventListener("click", (e) => {
+      const rect = canvas.getBoundingClientRect();
+      const clickY = e.clientY - rect.top;
+      spawnFish(e.clientX - rect.left, clickY);
+    });
+
+    function autoSpawn() {
+      const H = canvas.height;
+      const W = canvas.width;
+      const count = 1 + Math.floor(Math.random() * 2);
+      for (let i = 0; i < count; i++) {
+        setTimeout(() => {
+          spawnFish(W * (0.1 + Math.random() * 0.8), H * 0.91);
+        }, i * 400);
+      }
+      setTimeout(autoSpawn, 2000 + Math.random() * 3000);
+    }
+    setTimeout(autoSpawn, 1500);
+
+    function resize() {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+    }
+
+    function drawWave(baseY, bobAmp, bobSpeed, bobPhase, waveAmp, waveFreq, waveSpeed, color1, color2, alpha) {
+      const W = canvas.width, H = canvas.height;
+      const yCenter = baseY + Math.sin(t * bobSpeed + bobPhase) * bobAmp;
+      ctx.beginPath();
+      ctx.moveTo(0, H);
+      for (let x = 0; x <= W; x += 2) {
+        const y = yCenter
+          + Math.sin(x * waveFreq + t * waveSpeed) * waveAmp
+          + Math.sin(x * waveFreq * 2.1 + t * waveSpeed * 0.7 + 1.3) * waveAmp * 0.35
+          + Math.sin(x * waveFreq * 0.5 + t * waveSpeed * 1.4 + 2.7) * waveAmp * 0.2;
+        ctx.lineTo(x, y);
+      }
+      ctx.lineTo(W, H);
+      ctx.closePath();
+      const grad = ctx.createLinearGradient(0, yCenter - waveAmp * 3, 0, H);
+      grad.addColorStop(0, color1);
+      grad.addColorStop(1, color2);
+      ctx.fillStyle = grad;
+      ctx.globalAlpha = alpha;
+      ctx.fill();
+      ctx.globalAlpha = 1;
+    }
+
+    function drawFoam(baseY, bobAmp, bobSpeed, bobPhase, waveAmp, waveFreq, waveSpeed, alpha) {
+      const W = canvas.width;
+      const yCenter = baseY + Math.sin(t * bobSpeed + bobPhase) * bobAmp;
+      ctx.beginPath();
+      ctx.moveTo(0, yCenter + Math.sin(t * waveSpeed) * waveAmp);
+      for (let x = 0; x <= W; x += 2) {
+        const y = yCenter
+          + Math.sin(x * waveFreq + t * waveSpeed) * waveAmp
+          + Math.sin(x * waveFreq * 2.1 + t * waveSpeed * 0.7 + 1.3) * waveAmp * 0.35;
+        ctx.lineTo(x, y);
+      }
+      ctx.strokeStyle = `rgba(200,255,255,${alpha})`;
+      ctx.lineWidth = 1.5;
+      ctx.globalAlpha = 0.6;
+      ctx.stroke();
+      ctx.globalAlpha = 1;
+    }
+
+    function drawFish(f) {
+      ctx.save();
+      ctx.translate(f.x, f.y);
+      const angle = Math.atan2(f.vy, f.vx) + Math.PI / 2;
+      ctx.rotate(angle);
+      ctx.beginPath();
+      ctx.ellipse(0, 0, f.size * 0.45, f.size, 0, 0, Math.PI * 2);
+      ctx.fillStyle = f.color;
+      ctx.fill();
+      ctx.beginPath();
+      ctx.moveTo(-f.size * 0.4, f.size * 0.8);
+      ctx.lineTo(0, f.size * 1.5);
+      ctx.lineTo(f.size * 0.4, f.size * 0.8);
+      ctx.fillStyle = f.color;
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(f.size * 0.15, -f.size * 0.3, f.size * 0.12, 0, Math.PI * 2);
+      ctx.fillStyle = "#fff";
+      ctx.fill();
+      ctx.beginPath();
+      ctx.arc(f.size * 0.17, -f.size * 0.3, f.size * 0.07, 0, Math.PI * 2);
+      ctx.fillStyle = "#000";
+      ctx.fill();
+      ctx.beginPath();
+      ctx.moveTo(-f.size * 0.35, -f.size * 0.1);
+      ctx.lineTo(-f.size * 0.7, -f.size * 0.5);
+      ctx.lineTo(0, -f.size * 0.2);
+      ctx.fillStyle = `${f.color}bb`;
+      ctx.fill();
+      ctx.restore();
+    }
+
+    function draw() {
+      const W = canvas.width, H = canvas.height;
+      ctx.clearRect(0, 0, W, H);
+      const bg = ctx.createLinearGradient(0, 0, 0, H);
+      bg.addColorStop(0, "rgba(1,10,24,0)");
+      bg.addColorStop(0.15, "rgba(1,10,24,0.3)");
+      bg.addColorStop(0.4, "rgba(1,10,24,0.7)");
+      bg.addColorStop(1, "rgba(2,13,32,1)");
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, W, H);
+      const uwGlow = ctx.createRadialGradient(W*0.5, H, 0, W*0.5, H, W*0.6);
+      uwGlow.addColorStop(0, "rgba(0,100,160,0.25)");
+      uwGlow.addColorStop(1, "rgba(0,0,0,0)");
+      ctx.fillStyle = uwGlow;
+      ctx.fillRect(0, 0, W, H);
+
+      drawWave(H*0.65, 14, 0.30, 0.0,  12, 0.005, 0.50, "rgba(0,60,120,0.7)",  "rgba(0,10,40,0)", 0.5);
+      drawWave(H*0.87, 16, 0.35, 1.1,  14, 0.006, 0.55, "rgba(0,80,150,0.65)", "rgba(0,8,35,0)",  0.55);
+      drawWave(H*0.74, 18, 0.40, 2.3,  13, 0.007, 0.65, "rgba(0,100,170,0.6)", "rgba(0,6,30,0)",  0.6);
+      drawWave(H*0.83, 20, 0.45, 0.7,  15, 0.008, 0.75, "rgba(0,130,190,0.55)","rgba(0,4,25,0)",  0.65);
+      drawWave(H*0.79, 22, 0.50, 3.5,  14, 0.009, 0.85, "rgba(0,160,205,0.5)", "rgba(0,3,20,0)",  0.7);
+      drawWave(H*0.83, 24, 0.55, 1.8,  13, 0.010, 0.95, "rgba(0,190,215,0.5)", "rgba(0,2,18,0)",  0.75);
+      drawWave(H*0.87, 26, 0.60, 4.2,  11, 0.012, 1.10, "rgba(0,215,225,0.45)","rgba(0,1,15,0)",  0.80);
+      drawWave(H*0.91, 28, 0.65, 2.9,  10, 0.014, 1.25, "rgba(0,240,220,0.5)", "rgba(0,245,212,0)",0.85);
+      drawFoam(H*0.87, 26, 0.60, 4.2, 11, 0.012, 1.10, 0.25);
+      drawFoam(H*0.91, 28, 0.65, 2.9, 10, 0.014, 1.25, 0.35);
+
+      for (let i = 0; i < 5; i++) {
+        const sy = H*(0.65 + i*0.06) + Math.sin(t*0.5 + i*1.1)*8;
+        ctx.beginPath();
+        for (let x = 0; x <= W; x += 4) {
+          const y = sy + Math.sin(x*0.025 + t*1.3 + i*1.5)*3;
+          x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
+        }
+        ctx.strokeStyle = `rgba(0,245,212,${0.03+i*0.012})`;
+        ctx.lineWidth = 0.7;
+        ctx.stroke();
+      }
+
+      for (let i = fish.length - 1; i >= 0; i--) {
+        const f = fish[i];
+        f.vy += f.gravity;
+        f.x += f.vx;
+        f.y += f.vy;
+        for (let d of f.splash) {
+          d.x += d.vx; d.y += d.vy; d.vy += 0.3; d.life -= 0.03;
+          if (d.life > 0) {
+            ctx.beginPath();
+            ctx.arc(d.x, d.y, 2, 0, Math.PI * 2);
+            ctx.fillStyle = `rgba(0,245,212,${d.life * 0.7})`;
+            ctx.fill();
+          }
+        }
+        drawFish(f);
+        if (f.y > canvas.height * 0.95) {
+          ctx.beginPath();
+          ctx.arc(f.x, canvas.height * 0.91, 18, 0, Math.PI * 2);
+          ctx.fillStyle = "rgba(0,245,212,0.15)";
+          ctx.fill();
+          fish.splice(i, 1);
+        }
+      }
+
+      t += 0.016;
+      raf = requestAnimationFrame(draw);
+    }
+
+    resize();
+    window.addEventListener("resize", resize);
+    draw();
+    return () => { cancelAnimationFrame(raf); window.removeEventListener("resize", resize); };
+  }, []);
+
+  return <canvas ref={canvasRef} style={{ width:"100%", height:"100%", display:"block", cursor:"pointer" }}/>;
 }
 
 function HeroCanvas() {
