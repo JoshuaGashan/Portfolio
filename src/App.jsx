@@ -1356,7 +1356,7 @@ function Portfolio() {
           padding: isMobile ? "0 22px 36px" : isTablet ? "0 40px" : `0 ${px_outer}`,
           flex: isMobile ? "0 0 auto" : "unset",
           marginTop: isMobile ? "auto" : 0,
-          transform: isMobile ? "translateY(-200px)" : "none",
+          transform: isMobile ? "translateY(-120px)" : "none",
         }}>
           {/* Bio */}
           <p style={{
@@ -1706,11 +1706,11 @@ function Portfolio() {
         <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse 60% 60% at 50% 50%,#00f5d406,transparent)", pointerEvents:"none" }} />
         <FadeUp style={{ position:"relative", zIndex:1 }}>
           <p style={{ fontSize:14, letterSpacing:5, textTransform:"uppercase", color:"#00f5d4", marginBottom:20 }}>Contact</p>
-          <h2 style={{ fontSize: isMobile ? "clamp(42px,13vw,70px)" : "clamp(72px,11vw,130px)", fontWeight:900, letterSpacing:-2, marginBottom:16, lineHeight:1 }}>
+          <h2 style={{ fontSize: isMobile ? "clamp(34px,11vw,58px)" : "clamp(58px,9vw,108px)", fontWeight:900, letterSpacing:-2, marginBottom:16, lineHeight:1 }}>
             Let's Build<br />
             <span style={{ background:"linear-gradient(135deg,#00f5d4,#a855f7,#ff2d78)", backgroundSize:"200% auto", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", animation:"shimmer 4s linear infinite" }}>Something.</span>
           </h2>
-          <p style={{ color:"#555", fontSize: isMobile ? 18 : 21, marginBottom:40, maxWidth:400, margin:"0 auto 40px" }}>Open to Data Science, ML Engineering & Full-Stack opportunities.</p>
+          <p style={{ color:"#555", fontSize: isMobile ? 16 : 18, marginBottom:40, maxWidth:400, margin:"0 auto 40px" }}>Open to Data Science, ML Engineering & Full-Stack opportunities.</p>
           <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:12, marginBottom:40 }}>
             <div style={{ display:"flex", gap:10, flexWrap:"wrap", justifyContent:"center", width:"100%" }}>
               {/* Gmail */}
@@ -1767,11 +1767,7 @@ function Portfolio() {
               ))}
             </div>
           </div>
-          <div style={{ paddingTop:32, borderTop:"1px solid #ffffff06", textAlign:"center" }}>
-            <p style={{ fontSize:17, color:"#333", letterSpacing:0.5, lineHeight:1.8 }}>
-              © {new Date().getFullYear()} Joshua Gashan. All rights reserved.
-            </p>
-          </div>
+
         </FadeUp>
 
         {/* Ocean Wave — absolute background at bottom of contact */}
@@ -1782,7 +1778,11 @@ function Portfolio() {
           zIndex:0,
         }}>
           <OceanWave />
-
+          <div style={{ position:"absolute", bottom:20, left:0, right:0, textAlign:"center", zIndex:10, pointerEvents:"none" }}>
+            <p style={{ fontSize:13, color:"rgba(0,245,212,0.5)", letterSpacing:1, lineHeight:1.8 }}>
+              © {new Date().getFullYear()} Joshua Gashan. All rights reserved.
+            </p>
+          </div>
         </div>
       </section>
     </div>
