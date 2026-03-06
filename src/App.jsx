@@ -12,7 +12,7 @@ const PROJECTS = [
     title: "Doctor.lk",
     sub: "ML-based Disease Prediction System",
     desc: "Built a web-based healthcare platform as my final year project that predicts diseases from user symptoms using machine learning and NLP techniques. Implemented and compared multiple classification models and integrated a medication recommendation module for basic illnesses.",
-    tags: ["Python","Machine Learning","NLP","Flask","SQL"],
+    tags: ["Python", "Machine Learning", "NLP", "Flask", "SQL"],
     color: "#ff2d78",
     github: "https://github.com/JoshuaGashan/doctor_lk"
   },
@@ -20,7 +20,7 @@ const PROJECTS = [
     title: "Shopper Analytics",
     sub: "Online Shopper Behavior Analytics & Prediction",
     desc: "Designed a scalable analytics solution using Apache Spark and Snowflake to process and model the Online Shoppers Purchasing Intention Dataset. Implemented real-time analytics with Snowflake Streams and built predictive models using Python and Spark MLlib to uncover shopper trends.",
-    tags: ["Apache Spark","Snowflake","Python","Spark MLlib"],
+    tags: ["Apache Spark", "Snowflake", "Python", "Spark MLlib"],
     color: "#00f5d4",
     github: "https://github.com/JoshuaGashan/BigData-Sparke-Snowflakes-Appliances-Energy-Prediction"
   },
@@ -28,7 +28,7 @@ const PROJECTS = [
     title: "FurniViz 3D",
     sub: "2D/3D Furniture Visualization Platform",
     desc: "Built a full-stack web application for visualizing furniture in 2D and 3D customizable room layouts. Supported drag and drop furniture placement, real-time styling, floor and wall customization.",
-    tags: ["React.js","Azure Functions","Entity Framework Core","SQL","Bootstrap"],
+    tags: ["React.js", "Azure Functions", "Entity Framework Core", "SQL", "Bootstrap"],
     color: "#f7b731",
     github: "https://github.com/JoshuaGashan/2D-3D-Furniture-Web-application-HCI"
   },
@@ -36,7 +36,7 @@ const PROJECTS = [
     title: "BioAuth",
     sub: "Behavioral Biometric Authentication System",
     desc: "Developed a user authentication system using acceleration data from smartphones & smartwatches to verify identity through behavioral biometrics. Conducted in-depth analysis of time-domain & frequency-domain features to distinguish unique user patterns. Implemented and trained a Feedforward MLP neural network in MATLAB.",
-    tags: ["MATLAB","MLP Neural Network","Biometrics","Signal Processing"],
+    tags: ["MATLAB", "MLP Neural Network", "Biometrics", "Signal Processing"],
     color: "#a855f7",
     github: "https://github.com/JoshuaGashan/Matlab---AI-ML---Finalcode"
   },
@@ -44,7 +44,7 @@ const PROJECTS = [
     title: "SentiFlow",
     sub: "NLP Sentiment Analysis",
     desc: "Built an NLP system to classify text sentiment using ML classifiers, with text preprocessing including tokenization, lemmatization and feature extraction via TF-IDF and Bag of Words.",
-    tags: ["Python","Scikit-learn","Pandas","NLP","TF-IDF","Bag of Words"],
+    tags: ["Python", "Scikit-learn", "Pandas", "NLP", "TF-IDF", "Bag of Words"],
     color: "#3b82f6",
     github: "https://github.com/JoshuaGashan/NLP---Sentiment-Analysis---Fine-Tuning"
   },
@@ -63,13 +63,13 @@ const SKILLS = [
   { name: "Power BI", level: 75, color: "#3b82f6" },
 ];
 
-const STACK = ["Python","R","Scikit-learn","Pandas","NumPy","Apache Spark","Snowflake","SQL","MySQL","Flask","React.js","JavaScript","C#",".NET","PHP","HTML/CSS","Bootstrap","Azure","Power BI","Git","MATLAB","NLP","TF-IDF"];
+const STACK = ["Python", "R", "Scikit-learn", "Pandas", "NumPy", "Apache Spark", "Snowflake", "SQL", "MySQL", "Flask", "React.js", "JavaScript", "C#", ".NET", "PHP", "HTML/CSS", "Bootstrap", "Azure", "Power BI", "Git", "MATLAB", "NLP", "TF-IDF"];
 
 const SERVICES = [
-  { icon: "🧠", title: "Machine Learning & AI", desc: "Predictive models, NLP pipelines, and AI-powered systems deployed at scale.", color: "#ff2d78", items: ["Predictive Modelling","NLP & Text Analysis","Model Deployment","Deep Learning"], number: "01" },
-  { icon: "💻", title: "Full-Stack Development", desc: "End-to-end web apps with React frontends, Flask/.NET backends, and SQL databases.", color: "#00f5d4", items: ["React.js & JavaScript","Flask REST APIs","C# / .NET","SQL & MySQL"], number: "02" },
-  { icon: "📊", title: "Big Data & Analytics", desc: "Scalable pipelines, real-time analytics with Spark & Snowflake, and Power BI dashboards.", color: "#f7b731", items: ["Apache Spark & MLlib","Snowflake Streams","Power BI Dashboards","Statistical Analysis"], number: "03" },
-  { icon: "⚙️", title: "Software Engineering", desc: "Clean, maintainable software using OOP, agile workflows, and cloud deployment.", color: "#a855f7", items: ["OOP & Design Patterns","Multi-language Dev","Agile & Git","Azure Cloud"], number: "04" },
+  { icon: "🧠", title: "Machine Learning & AI", desc: "Predictive models, NLP pipelines, and AI-powered systems deployed at scale.", color: "#ff2d78", items: ["Predictive Modelling", "NLP & Text Analysis", "Model Deployment", "Deep Learning"], number: "01" },
+  { icon: "💻", title: "Full-Stack Development", desc: "End-to-end web apps with React frontends, Flask/.NET backends, and SQL databases.", color: "#00f5d4", items: ["React.js & JavaScript", "Flask REST APIs", "C# / .NET", "SQL & MySQL"], number: "02" },
+  { icon: "📊", title: "Big Data & Analytics", desc: "Scalable pipelines, real-time analytics with Spark & Snowflake, and Power BI dashboards.", color: "#f7b731", items: ["Apache Spark & MLlib", "Snowflake Streams", "Power BI Dashboards", "Statistical Analysis"], number: "03" },
+  { icon: "⚙️", title: "Software Engineering", desc: "Clean, maintainable software using OOP, agile workflows, and cloud deployment.", color: "#a855f7", items: ["OOP & Design Patterns", "Multi-language Dev", "Agile & Git", "Azure Cloud"], number: "04" },
 ];
 
 function useInView(threshold = 0.1) {
@@ -155,7 +155,7 @@ function HoverWord({ word, color, pill = false }) {
 }
 
 function GitHubIcon({ size = 16 }) {
-  return <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>;
+  return <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z" /></svg>;
 }
 
 
@@ -180,33 +180,33 @@ function SpaceBackground() {
     let warpStars = [];
     // Orbital planets
     const TECH_PLANETS = [
-      { name:"Python",    color:"#3b82f6", size:14, orbitX:0.18, orbitY:0.22, speed:0.0004, angle:0.0,  },
-      { name:"React",     color:"#00f5d4", size:11, orbitX:0.82, orbitY:0.18, speed:0.0006, angle:1.2,  },
-      { name:"ML",        color:"#ff2d78", size:16, orbitX:0.15, orbitY:0.75, speed:0.0003, angle:2.5,  },
-      { name:"Flask",     color:"#f7b731", size:9,  orbitX:0.88, orbitY:0.72, speed:0.0005, angle:3.8,  },
-      { name:"SQL",       color:"#a855f7", size:10, orbitX:0.5,  orbitY:0.12, speed:0.00035,angle:0.8,  },
-      { name:"Spark",     color:"#ff6b35", size:13, orbitX:0.5,  orbitY:0.88, speed:0.00025,angle:4.1,  },
-      { name:"NLP",       color:"#06b6d4", size:10, orbitX:0.25, orbitY:0.48, speed:0.00045,angle:1.9,  },
-      { name:"Snowflake", color:"#60a5fa", size:11, orbitX:0.75, orbitY:0.45, speed:0.0002, angle:3.3,  },
-      { name:"Azure",     color:"#0ea5e9", size:9,  orbitX:0.38, orbitY:0.85, speed:0.00038,angle:5.0,  },
-      { name:"Power BI",  color:"#f59e0b", size:9,  orbitX:0.65, orbitY:0.82, speed:0.00028,angle:2.2,  },
-      { name:"MATLAB",    color:"#c084fc", size:8,  orbitX:0.12, orbitY:0.55, speed:0.00032,angle:0.5,  },
-      { name:"R",         color:"#818cf8", size:7,  orbitX:0.9,  orbitY:0.5,  speed:0.00022,angle:4.6,  },
+      { name: "Python", color: "#3b82f6", size: 14, orbitX: 0.18, orbitY: 0.22, speed: 0.0004, angle: 0.0, },
+      { name: "React", color: "#00f5d4", size: 11, orbitX: 0.82, orbitY: 0.18, speed: 0.0006, angle: 1.2, },
+      { name: "ML", color: "#ff2d78", size: 16, orbitX: 0.15, orbitY: 0.75, speed: 0.0003, angle: 2.5, },
+      { name: "Flask", color: "#f7b731", size: 9, orbitX: 0.88, orbitY: 0.72, speed: 0.0005, angle: 3.8, },
+      { name: "SQL", color: "#a855f7", size: 10, orbitX: 0.5, orbitY: 0.12, speed: 0.00035, angle: 0.8, },
+      { name: "Spark", color: "#ff6b35", size: 13, orbitX: 0.5, orbitY: 0.88, speed: 0.00025, angle: 4.1, },
+      { name: "NLP", color: "#06b6d4", size: 10, orbitX: 0.25, orbitY: 0.48, speed: 0.00045, angle: 1.9, },
+      { name: "Snowflake", color: "#60a5fa", size: 11, orbitX: 0.75, orbitY: 0.45, speed: 0.0002, angle: 3.3, },
+      { name: "Azure", color: "#0ea5e9", size: 9, orbitX: 0.38, orbitY: 0.85, speed: 0.00038, angle: 5.0, },
+      { name: "Power BI", color: "#f59e0b", size: 9, orbitX: 0.65, orbitY: 0.82, speed: 0.00028, angle: 2.2, },
+      { name: "MATLAB", color: "#c084fc", size: 8, orbitX: 0.12, orbitY: 0.55, speed: 0.00032, angle: 0.5, },
+      { name: "R", color: "#818cf8", size: 7, orbitX: 0.9, orbitY: 0.5, speed: 0.00022, angle: 4.6, },
     ];
 
-    const rnd = (a,b) => a + Math.random()*(b-a);
+    const rnd = (a, b) => a + Math.random() * (b - a);
 
     const setup = () => {
       W = canvas.width = container.offsetWidth || window.innerWidth;
       H = canvas.height = container.offsetHeight || 600;
 
       // Warp stars — each has a starting position and speed
-      warpStars = Array.from({length: 280}, () => ({
+      warpStars = Array.from({ length: 280 }, () => ({
         x: rnd(0, W), y: rnd(0, H),
         z: rnd(0, W),           // depth — 0=near, W=far
         pz: 0,                   // previous z for trail
         size: rnd(0.5, 2.2),
-        color: Math.random() > 0.8 ? (Math.random()>0.5 ? "#b0c8ff" : "#ffd8a8") : "#ffffff",
+        color: Math.random() > 0.8 ? (Math.random() > 0.5 ? "#b0c8ff" : "#ffd8a8") : "#ffffff",
         speed: rnd(1.5, 5),
       }));
       // reset pz
@@ -218,30 +218,30 @@ function SpaceBackground() {
 
     const draw = () => {
       time++;
-      ctx.clearRect(0,0,W,H);
+      ctx.clearRect(0, 0, W, H);
 
       // Deep space bg
       ctx.fillStyle = "#050510";
-      ctx.fillRect(0,0,W,H);
+      ctx.fillRect(0, 0, W, H);
 
       // Nebula clouds
       [
-        {x:0.2,y:0.3,r:200,c:"0,245,212",a:0.025},
-        {x:0.8,y:0.7,r:180,c:"168,85,247",a:0.03},
-        {x:0.5,y:0.5,r:250,c:"255,45,120",a:0.015},
-        {x:0.1,y:0.8,r:150,c:"247,183,49",a:0.02},
-        {x:0.9,y:0.2,r:160,c:"59,130,246",a:0.025},
+        { x: 0.2, y: 0.3, r: 200, c: "0,245,212", a: 0.025 },
+        { x: 0.8, y: 0.7, r: 180, c: "168,85,247", a: 0.03 },
+        { x: 0.5, y: 0.5, r: 250, c: "255,45,120", a: 0.015 },
+        { x: 0.1, y: 0.8, r: 150, c: "247,183,49", a: 0.02 },
+        { x: 0.9, y: 0.2, r: 160, c: "59,130,246", a: 0.025 },
       ].forEach(n => {
-        const ng = ctx.createRadialGradient(n.x*W, n.y*H, 0, n.x*W, n.y*H, n.r);
+        const ng = ctx.createRadialGradient(n.x * W, n.y * H, 0, n.x * W, n.y * H, n.r);
         ng.addColorStop(0, `rgba(${n.c},${n.a})`);
-        ng.addColorStop(0.5, `rgba(${n.c},${n.a*0.4})`);
+        ng.addColorStop(0.5, `rgba(${n.c},${n.a * 0.4})`);
         ng.addColorStop(1, "rgba(0,0,0,0)");
-        ctx.beginPath(); ctx.arc(n.x*W,n.y*H,n.r,0,Math.PI*2);
-        ctx.fillStyle=ng; ctx.fill();
+        ctx.beginPath(); ctx.arc(n.x * W, n.y * H, n.r, 0, Math.PI * 2);
+        ctx.fillStyle = ng; ctx.fill();
       });
 
       // ── WARP STARS (flying toward viewer) ──
-      const cx2 = W/2, cy2 = H/2;
+      const cx2 = W / 2, cy2 = H / 2;
       warpStars.forEach(s => {
         s.pz = s.z;
         s.z -= s.speed * (1 + time * 0.0003); // accelerate slightly over time
@@ -262,7 +262,7 @@ function SpaceBackground() {
         const py2 = (s.y - cy2) * pScale + cy2;
 
         const radius = Math.max(0.3, s.size * scale * 0.5);
-        const brightness = Math.min(1, (1 - s.z/W) * 1.4);
+        const brightness = Math.min(1, (1 - s.z / W) * 1.4);
 
         // Draw trail (streak)
         const trailLen = Math.max(1, (W - s.z) / W * 12);
@@ -279,12 +279,12 @@ function SpaceBackground() {
         }
 
         // Draw star dot
-        const g = ctx.createRadialGradient(sx,sy,0,sx,sy,radius*2.5);
+        const g = ctx.createRadialGradient(sx, sy, 0, sx, sy, radius * 2.5);
         g.addColorStop(0, `rgba(255,255,255,${brightness})`);
         g.addColorStop(1, `rgba(255,255,255,0)`);
-        ctx.beginPath(); ctx.arc(sx,sy,radius*2.5,0,Math.PI*2);
+        ctx.beginPath(); ctx.arc(sx, sy, radius * 2.5, 0, Math.PI * 2);
         ctx.fillStyle = g; ctx.fill();
-        ctx.beginPath(); ctx.arc(sx,sy,radius,0,Math.PI*2);
+        ctx.beginPath(); ctx.arc(sx, sy, radius, 0, Math.PI * 2);
         ctx.fillStyle = `rgba(255,255,255,${brightness})`; ctx.fill();
       });
 
@@ -292,51 +292,51 @@ function SpaceBackground() {
       TECH_PLANETS.forEach((p, i) => {
         p.angle += p.speed;
         // Float in an elliptical path around their home position
-        const floatR = 22 + Math.sin(time*0.001+i)*8;
+        const floatR = 22 + Math.sin(time * 0.001 + i) * 8;
         const px3 = p.orbitX * W + Math.cos(p.angle * 3) * floatR;
         const py3 = p.orbitY * H + Math.sin(p.angle * 3) * floatR * 0.5;
 
         // Skip if out of bounds
-        if (px3 < -40 || px3 > W+40 || py3 < -40 || py3 > H+40) return;
+        if (px3 < -40 || px3 > W + 40 || py3 < -40 || py3 > H + 40) return;
 
         const pulse = 0.8 + 0.2 * Math.sin(time * 0.02 + i);
         const pr = p.size * pulse;
 
         // Atmosphere
-        const ag = ctx.createRadialGradient(px3,py3,0,px3,py3,pr*4);
-        ag.addColorStop(0, p.color+"55"); ag.addColorStop(1,"transparent");
-        ctx.beginPath(); ctx.arc(px3,py3,pr*4,0,Math.PI*2);
-        ctx.fillStyle=ag; ctx.fill();
+        const ag = ctx.createRadialGradient(px3, py3, 0, px3, py3, pr * 4);
+        ag.addColorStop(0, p.color + "55"); ag.addColorStop(1, "transparent");
+        ctx.beginPath(); ctx.arc(px3, py3, pr * 4, 0, Math.PI * 2);
+        ctx.fillStyle = ag; ctx.fill();
 
         // Body
-        const sg = ctx.createRadialGradient(px3-pr*0.3,py3-pr*0.3,0,px3,py3,pr);
-        sg.addColorStop(0,"#fff"); sg.addColorStop(0.3,p.color+"ee");
-        sg.addColorStop(1,p.color+"66");
-        ctx.beginPath(); ctx.arc(px3,py3,pr,0,Math.PI*2);
-        ctx.fillStyle=sg; ctx.fill();
+        const sg = ctx.createRadialGradient(px3 - pr * 0.3, py3 - pr * 0.3, 0, px3, py3, pr);
+        sg.addColorStop(0, "#fff"); sg.addColorStop(0.3, p.color + "ee");
+        sg.addColorStop(1, p.color + "66");
+        ctx.beginPath(); ctx.arc(px3, py3, pr, 0, Math.PI * 2);
+        ctx.fillStyle = sg; ctx.fill();
 
         // Shadow
-        const shd = ctx.createRadialGradient(px3+pr*0.35,py3+pr*0.35,0,px3,py3,pr);
-        shd.addColorStop(0,"rgba(0,0,0,0)"); shd.addColorStop(0.7,"rgba(0,0,0,0.35)");
-        ctx.beginPath(); ctx.arc(px3,py3,pr,0,Math.PI*2);
-        ctx.fillStyle=shd; ctx.fill();
+        const shd = ctx.createRadialGradient(px3 + pr * 0.35, py3 + pr * 0.35, 0, px3, py3, pr);
+        shd.addColorStop(0, "rgba(0,0,0,0)"); shd.addColorStop(0.7, "rgba(0,0,0,0.35)");
+        ctx.beginPath(); ctx.arc(px3, py3, pr, 0, Math.PI * 2);
+        ctx.fillStyle = shd; ctx.fill();
 
         // Label
-        const labelAlpha = 0.5 + 0.5*Math.sin(time*0.018+i);
+        const labelAlpha = 0.5 + 0.5 * Math.sin(time * 0.018 + i);
         ctx.save();
         ctx.globalAlpha = labelAlpha * 0.85;
         const fs = Math.max(8, p.size - 1);
         ctx.font = `700 ${fs}px system-ui,sans-serif`;
         const tw = ctx.measureText(p.name).width;
-        const lx=px3, ly=py3-pr-12;
-        ctx.fillStyle="rgba(5,5,18,0.7)";
+        const lx = px3, ly = py3 - pr - 12;
+        ctx.fillStyle = "rgba(5,5,18,0.7)";
         ctx.beginPath();
-        if(ctx.roundRect) ctx.roundRect(lx-tw/2-3,ly-fs/2-2,tw+6,fs+4,3);
-        else ctx.rect(lx-tw/2-3,ly-fs/2-2,tw+6,fs+4);
+        if (ctx.roundRect) ctx.roundRect(lx - tw / 2 - 3, ly - fs / 2 - 2, tw + 6, fs + 4, 3);
+        else ctx.rect(lx - tw / 2 - 3, ly - fs / 2 - 2, tw + 6, fs + 4);
         ctx.fill();
-        ctx.shadowColor=p.color; ctx.shadowBlur=6;
-        ctx.fillStyle="#fff"; ctx.textAlign="center"; ctx.textBaseline="middle";
-        ctx.fillText(p.name,lx,ly);
+        ctx.shadowColor = p.color; ctx.shadowBlur = 6;
+        ctx.fillStyle = "#fff"; ctx.textAlign = "center"; ctx.textBaseline = "middle";
+        ctx.fillText(p.name, lx, ly);
         ctx.restore();
       });
 
@@ -352,7 +352,7 @@ function SpaceBackground() {
     };
   }, []);
 
-  return <div ref={mountRef} style={{ position:"absolute", inset:0, zIndex:0 }} />;
+  return <div ref={mountRef} style={{ position: "absolute", inset: 0, zIndex: 0 }} />;
 }
 
 function LiquidGlassCard({ service: s, isMobile }) {
@@ -375,9 +375,9 @@ function LiquidGlassCard({ service: s, isMobile }) {
 
   // Parse hex color to rgb
   const hexToRgb = (hex) => {
-    const r = parseInt(hex.slice(1,3),16);
-    const g = parseInt(hex.slice(3,5),16);
-    const b = parseInt(hex.slice(5,7),16);
+    const r = parseInt(hex.slice(1, 3), 16);
+    const g = parseInt(hex.slice(3, 5), 16);
+    const b = parseInt(hex.slice(5, 7), 16);
     return `${r},${g},${b}`;
   };
   const rgb = hexToRgb(s.color);
@@ -565,21 +565,18 @@ function AIChatbot() {
     setLoading(true);
 
     try {
-      const response = await fetch("https://api.anthropic.com/v1/messages", {
+      const response = await fetch("/api/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          "anthropic-dangerous-direct-browser-access": "true",
         },
         body: JSON.stringify({
-          model: "claude-haiku-4-5-20251001",
-          max_tokens: 1000,
           system: JOSHUA_CONTEXT,
           messages: newMessages.map(m => ({ role: m.role, content: m.content })),
         }),
       });
       const data = await response.json();
-      const reply = data?.content?.[0]?.text || "Sorry, something went wrong. Please email Joshua at Joshuagashan@gmail.com 😊";
+      const reply = data?.reply || "Sorry, something went wrong. Please email Joshua at Joshuagashan@gmail.com 😊";
       setMessages(prev => [...prev, { role: "assistant", content: reply }]);
     } catch (err) {
       setMessages(prev => [...prev, { role: "assistant", content: "Oops! Something went wrong. Please try again or contact Joshua directly at Joshuagashan@gmail.com 😊" }]);
@@ -615,12 +612,12 @@ function AIChatbot() {
             <div style={{ fontWeight: 700, fontSize: 14, color: "#fff" }}>Joshua's AI Assistant</div>
             <div style={{ fontSize: 11, color: "#22c55e", display: "flex", alignItems: "center", gap: 5 }}>
               <div style={{ width: 6, height: 6, borderRadius: "50%", background: "#22c55e", animation: "pulse-dot 2s infinite" }} />
-              Always online 
+              Always online
             </div>
           </div>
           <button onClick={() => setOpen(false)} style={{ background: "none", border: "none", color: "#555", cursor: "pointer", padding: 4, display: "flex", alignItems: "center", transition: "color .2s" }}
-            onMouseEnter={e => e.currentTarget.style.color="#fff"} onMouseLeave={e => e.currentTarget.style.color="#555"}>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            onMouseEnter={e => e.currentTarget.style.color = "#fff"} onMouseLeave={e => e.currentTarget.style.color = "#555"}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12" /></svg>
           </button>
         </div>
 
@@ -654,8 +651,8 @@ function AIChatbot() {
               {SUGGESTIONS.map(s => (
                 <button key={s} onClick={() => { setInput(s); setTimeout(() => inputRef.current?.focus(), 100); }}
                   style={{ padding: "8px 12px", background: "rgba(0,245,212,0.06)", border: "1px solid rgba(0,245,212,0.2)", borderRadius: 8, color: "#00f5d4", fontSize: 12, cursor: "pointer", textAlign: "left", transition: "all .2s", fontFamily: "'Inter','Segoe UI',system-ui,sans-serif" }}
-                  onMouseEnter={e => e.currentTarget.style.background="rgba(0,245,212,0.12)"}
-                  onMouseLeave={e => e.currentTarget.style.background="rgba(0,245,212,0.06)"}>
+                  onMouseEnter={e => e.currentTarget.style.background = "rgba(0,245,212,0.12)"}
+                  onMouseLeave={e => e.currentTarget.style.background = "rgba(0,245,212,0.06)"}>
                   {s}
                 </button>
               ))}
@@ -667,7 +664,7 @@ function AIChatbot() {
             <div style={{ display: "flex", gap: 8, alignItems: "flex-end" }}>
               <div style={{ width: 28, height: 28, borderRadius: "50%", background: "linear-gradient(135deg,#00f5d4,#a855f7)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 10, fontWeight: 900, color: "#070710", flexShrink: 0 }}>JG</div>
               <div style={{ padding: "12px 16px", borderRadius: "14px 14px 14px 4px", background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.08)", display: "flex", gap: 5, alignItems: "center" }}>
-                {[0,1,2].map(i => <div key={i} style={{ width: 6, height: 6, borderRadius: "50%", background: "#00f5d4", animation: "bounce 0.9s ease infinite", animationDelay: i * 0.2 + "s", opacity: 0.7 }} />)}
+                {[0, 1, 2].map(i => <div key={i} style={{ width: 6, height: 6, borderRadius: "50%", background: "#00f5d4", animation: "bounce 0.9s ease infinite", animationDelay: i * 0.2 + "s", opacity: 0.7 }} />)}
               </div>
             </div>
           )}
@@ -690,7 +687,7 @@ function AIChatbot() {
             style={{ width: 40, height: 40, borderRadius: 10, background: input.trim() && !loading ? "linear-gradient(135deg,#00f5d4,#00c4a9)" : "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.08)", cursor: input.trim() && !loading ? "pointer" : "default", display: "flex", alignItems: "center", justifyContent: "center", transition: "all .2s", flexShrink: 0 }}>
             {loading
               ? <div style={{ width: 14, height: 14, borderRadius: "50%", border: "2px solid rgba(255,255,255,0.2)", borderTopColor: "#00f5d4", animation: "spin 0.7s linear infinite" }} />
-              : <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={input.trim() ? "#070710" : "#444"} strokeWidth="2.5" strokeLinecap="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              : <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke={input.trim() ? "#070710" : "#444"} strokeWidth="2.5" strokeLinecap="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" /></svg>
             }
           </button>
         </div>
@@ -717,8 +714,8 @@ function AIChatbot() {
           <div style={{ position: "absolute", width: "100%", height: "100%", borderRadius: "50%", background: "rgba(0,245,212,0.4)", animation: "ping 1.5s cubic-bezier(0,0,0.2,1) infinite" }} />
         )}
         {open
-          ? <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00f5d4" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
-          : <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#070710" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 10h8M8 14h5"/></svg>
+          ? <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#00f5d4" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12" /></svg>
+          : <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#070710" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" /><path d="M8 10h8M8 14h5" /></svg>
         }
       </button>
     </>
@@ -726,15 +723,15 @@ function AIChatbot() {
 }
 
 const SOCIAL = [
-  { url:"https://github.com/JoshuaGashan",                          key:"gh" },
-  { url:"https://www.linkedin.com/in/joshua-gashan-315556254/",     key:"li" },
-  { url:"https://wa.me/94767159028?text=Hi%20Joshua!",                               key:"wa" },
-  { url:"https://www.youtube.com/@Joshua_Gashan",                  key:"yt" },
+  { url: "https://github.com/JoshuaGashan", key: "gh" },
+  { url: "https://www.linkedin.com/in/joshua-gashan-315556254/", key: "li" },
+  { url: "https://wa.me/94767159028?text=Hi%20Joshua!", key: "wa" },
+  { url: "https://www.youtube.com/@Joshua_Gashan", key: "yt" },
 ];
 
-function SocialIcon({ k, size=16 }) {
-  if (k==="gh") { return (<GitHubIcon size={size} />); }
-  if (k==="li") {
+function SocialIcon({ k, size = 16 }) {
+  if (k === "gh") { return (<GitHubIcon size={size} />); }
+  if (k === "li") {
     return (
       <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
         <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
@@ -743,14 +740,14 @@ function SocialIcon({ k, size=16 }) {
       </svg>
     );
   }
-  if (k==="wa") {
+  if (k === "wa") {
     return (
       <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z" />
       </svg>
     );
   }
-  if (k==="yt") {
+  if (k === "yt") {
     return (
       <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor">
         <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
@@ -797,7 +794,7 @@ function ShootingStars() {
       shoots.forEach((s, i) => {
         s.x += s.vx; s.y += s.vy; s.life -= 0.018;
         if (s.life <= 0) { shoots.splice(i, 1); return; }
-        const tail = ctx.createLinearGradient(s.x, s.y, s.x - s.vx*(s.len/s.vx||8), s.y - s.vy*(s.len/s.vy||8));
+        const tail = ctx.createLinearGradient(s.x, s.y, s.x - s.vx * (s.len / s.vx || 8), s.y - s.vy * (s.len / s.vy || 8));
         tail.addColorStop(0, s.color + Math.min(s.life, 0.9).toFixed(2) + ")");
         tail.addColorStop(1, s.color + "0)");
         ctx.beginPath();
@@ -805,13 +802,13 @@ function ShootingStars() {
         ctx.lineWidth = 1.5;
         ctx.moveTo(s.x, s.y);
         const tailLen = s.len;
-        const nx = s.vx / Math.sqrt(s.vx*s.vx + s.vy*s.vy);
-        const ny = s.vy / Math.sqrt(s.vx*s.vx + s.vy*s.vy);
-        ctx.lineTo(s.x - nx*tailLen, s.y - ny*tailLen);
+        const nx = s.vx / Math.sqrt(s.vx * s.vx + s.vy * s.vy);
+        const ny = s.vy / Math.sqrt(s.vx * s.vx + s.vy * s.vy);
+        ctx.lineTo(s.x - nx * tailLen, s.y - ny * tailLen);
         ctx.stroke();
         // head glow
         ctx.beginPath();
-        ctx.arc(s.x, s.y, 2, 0, Math.PI*2);
+        ctx.arc(s.x, s.y, 2, 0, Math.PI * 2);
         ctx.fillStyle = s.color + Math.min(s.life, 1).toFixed(2) + ")";
         ctx.fill();
       });
@@ -823,7 +820,7 @@ function ShootingStars() {
   }, []);
 
   return (
-    <canvas ref={canvasRef} style={{ position:"absolute", inset:0, width:"100%", height:"100%", zIndex:2, pointerEvents:"none" }} />
+    <canvas ref={canvasRef} style={{ position: "absolute", inset: 0, width: "100%", height: "100%", zIndex: 2, pointerEvents: "none" }} />
   );
 }
 
@@ -831,24 +828,24 @@ function ShootingStars() {
 
 // ─── FLOATING TECH TAGS (popup one by one) ───────────────────────────────────
 const TECH_TAGS = [
-  { label:"Python",      col:"#3b82f6", x:72, y:18, dur:5.2, fd:0    },
-  { label:"TensorFlow",  col:"#ff6b35", x:58, y:8,  dur:4.8, fd:0.3  },
-  { label:"React",       col:"#00f5d4", x:85, y:32, dur:6.1, fd:0.6  },
-  { label:"PyTorch",     col:"#ff2d78", x:63, y:42, dur:4.5, fd:0.9  },
-  { label:"Sklearn",     col:"#22c55e", x:78, y:55, dur:5.8, fd:1.2  },
-  { label:"Spark",       col:"#f7b731", x:55, y:62, dur:4.2, fd:1.5  },
-  { label:"Flask",       col:"#a78bfa", x:88, y:68, dur:6.4, fd:1.8  },
-  { label:"SQL",         col:"#38bdf8", x:67, y:75, dur:5.0, fd:2.1  },
-  { label:"Pandas",      col:"#3b82f6", x:80, y:82, dur:4.7, fd:2.4  },
-  { label:"OpenCV",      col:"#ff6b35", x:57, y:88, dur:5.5, fd:2.7  },
-  { label:"NLP",         col:"#f472b6", x:92, y:22, dur:4.3, fd:3.0  },
-  { label:"Keras",       col:"#ff2d78", x:74, y:90, dur:6.0, fd:3.3  },
-  { label:"Node.js",     col:"#22c55e", x:60, y:25, dur:5.3, fd:3.6  },
-  { label:"R",           col:"#60a5fa", x:90, y:48, dur:4.6, fd:3.9  },
-  { label:"Deep Learn",  col:"#a855f7", x:65, y:15, dur:5.9, fd:4.2  },
-  { label:"NumPy",       col:"#00f5d4", x:83, y:12, dur:4.4, fd:4.5  },
-  { label:"Docker",      col:"#38bdf8", x:70, y:35, dur:6.2, fd:4.8  },
-  { label:"Git",         col:"#f97316", x:56, y:50, dur:4.9, fd:5.1  },
+  { label: "Python", col: "#3b82f6", x: 72, y: 18, dur: 5.2, fd: 0 },
+  { label: "TensorFlow", col: "#ff6b35", x: 58, y: 8, dur: 4.8, fd: 0.3 },
+  { label: "React", col: "#00f5d4", x: 85, y: 32, dur: 6.1, fd: 0.6 },
+  { label: "PyTorch", col: "#ff2d78", x: 63, y: 42, dur: 4.5, fd: 0.9 },
+  { label: "Sklearn", col: "#22c55e", x: 78, y: 55, dur: 5.8, fd: 1.2 },
+  { label: "Spark", col: "#f7b731", x: 55, y: 62, dur: 4.2, fd: 1.5 },
+  { label: "Flask", col: "#a78bfa", x: 88, y: 68, dur: 6.4, fd: 1.8 },
+  { label: "SQL", col: "#38bdf8", x: 67, y: 75, dur: 5.0, fd: 2.1 },
+  { label: "Pandas", col: "#3b82f6", x: 80, y: 82, dur: 4.7, fd: 2.4 },
+  { label: "OpenCV", col: "#ff6b35", x: 57, y: 88, dur: 5.5, fd: 2.7 },
+  { label: "NLP", col: "#f472b6", x: 92, y: 22, dur: 4.3, fd: 3.0 },
+  { label: "Keras", col: "#ff2d78", x: 74, y: 90, dur: 6.0, fd: 3.3 },
+  { label: "Node.js", col: "#22c55e", x: 60, y: 25, dur: 5.3, fd: 3.6 },
+  { label: "R", col: "#60a5fa", x: 90, y: 48, dur: 4.6, fd: 3.9 },
+  { label: "Deep Learn", col: "#a855f7", x: 65, y: 15, dur: 5.9, fd: 4.2 },
+  { label: "NumPy", col: "#00f5d4", x: 83, y: 12, dur: 4.4, fd: 4.5 },
+  { label: "Docker", col: "#38bdf8", x: 70, y: 35, dur: 6.2, fd: 4.8 },
+  { label: "Git", col: "#f97316", x: 56, y: 50, dur: 4.9, fd: 5.1 },
 ];
 
 function FloatingTags({ isMobile }) {
@@ -880,7 +877,7 @@ function FloatingTags({ isMobile }) {
         <div key={tag.label} style={{
           position: "absolute",
           left: isMobile ? `${20 + (i % 4) * 22}%` : `${tag.x}%`,
-          top:  isMobile ? `${10 + Math.floor(i / 4) * 18}%` : `${tag.y}%`,
+          top: isMobile ? `${10 + Math.floor(i / 4) * 18}%` : `${tag.y}%`,
           opacity: 0,
           animation: [
             `tagPopFloat 1s cubic-bezier(0.34,1.56,0.64,1) ${tag.fd}s forwards`,
@@ -916,28 +913,28 @@ function FloatingTags({ isMobile }) {
 
 // ─── CONTACT CODE WINDOW ─────────────────────────────────────────────────────
 const CONTACT_LINES = [
-  { tokens: [{ t:"# ", c:"#636d83" }, { t:"Let's collaborate 🚀", c:"#636d83" }] },
+  { tokens: [{ t: "# ", c: "#636d83" }, { t: "Let's collaborate 🚀", c: "#636d83" }] },
   { tokens: [] },
-  { tokens: [{ t:"from ", c:"#cc99cd" }, { t:"joshua ", c:"#f8f8f2" }, { t:"import ", c:"#cc99cd" }, { t:"skills", c:"#00f5d4" }] },
+  { tokens: [{ t: "from ", c: "#cc99cd" }, { t: "joshua ", c: "#f8f8f2" }, { t: "import ", c: "#cc99cd" }, { t: "skills", c: "#00f5d4" }] },
   { tokens: [] },
-  { tokens: [{ t:"project ", c:"#f8f8f2" }, { t:"= ", c:"#f8f8f2" }, { t:"{", c:"#f8f8f2" }] },
-  { tokens: [{ t:'  "type"', c:"#f7b731" }, { t:":  ", c:"#f8f8f2" }, { t:'"ML + Web App"', c:"#22c55e" }, { t:",", c:"#f8f8f2" }] },
-  { tokens: [{ t:'  "stack"', c:"#f7b731" }, { t:": ", c:"#f8f8f2" }, { t:"[", c:"#f8f8f2" }, { t:'"Python"', c:"#22c55e" }, { t:", ", c:"#f8f8f2" }, { t:'"React"', c:"#22c55e" }, { t:", ", c:"#f8f8f2" }, { t:'"ML"', c:"#22c55e" }, { t:"],", c:"#f8f8f2" }] },
-  { tokens: [{ t:'  "status"', c:"#f7b731" }, { t:": ", c:"#f8f8f2" }, { t:'"open_to_work"', c:"#00f5d4" }, { t:",", c:"#f8f8f2" }] },
-  { tokens: [{ t:"}", c:"#f8f8f2" }] },
+  { tokens: [{ t: "project ", c: "#f8f8f2" }, { t: "= ", c: "#f8f8f2" }, { t: "{", c: "#f8f8f2" }] },
+  { tokens: [{ t: '  "type"', c: "#f7b731" }, { t: ":  ", c: "#f8f8f2" }, { t: '"ML + Web App"', c: "#22c55e" }, { t: ",", c: "#f8f8f2" }] },
+  { tokens: [{ t: '  "stack"', c: "#f7b731" }, { t: ": ", c: "#f8f8f2" }, { t: "[", c: "#f8f8f2" }, { t: '"Python"', c: "#22c55e" }, { t: ", ", c: "#f8f8f2" }, { t: '"React"', c: "#22c55e" }, { t: ", ", c: "#f8f8f2" }, { t: '"ML"', c: "#22c55e" }, { t: "],", c: "#f8f8f2" }] },
+  { tokens: [{ t: '  "status"', c: "#f7b731" }, { t: ": ", c: "#f8f8f2" }, { t: '"open_to_work"', c: "#00f5d4" }, { t: ",", c: "#f8f8f2" }] },
+  { tokens: [{ t: "}", c: "#f8f8f2" }] },
   { tokens: [] },
-  { tokens: [{ t:"def ", c:"#cc99cd" }, { t:"hire_joshua", c:"#a855f7" }, { t:"(your_idea):", c:"#f8f8f2" }] },
-  { tokens: [{ t:'  email ', c:"#f8f8f2" }, { t:"= ", c:"#f8f8f2" }, { t:'"Joshuagashan@gmail.com"', c:"#f7b731" }] },
-  { tokens: [{ t:"  return ", c:"#cc99cd" }, { t:"build_together", c:"#00f5d4" }, { t:"(your_idea)", c:"#f8f8f2" }] },
+  { tokens: [{ t: "def ", c: "#cc99cd" }, { t: "hire_joshua", c: "#a855f7" }, { t: "(your_idea):", c: "#f8f8f2" }] },
+  { tokens: [{ t: '  email ', c: "#f8f8f2" }, { t: "= ", c: "#f8f8f2" }, { t: '"Joshuagashan@gmail.com"', c: "#f7b731" }] },
+  { tokens: [{ t: "  return ", c: "#cc99cd" }, { t: "build_together", c: "#00f5d4" }, { t: "(your_idea)", c: "#f8f8f2" }] },
   { tokens: [] },
-  { tokens: [{ t:"# Call now 👇", c:"#636d83" }] },
-  { tokens: [{ t:"hire_joshua", c:"#a855f7" }, { t:"(", c:"#f8f8f2" }, { t:'"your_next_project"', c:"#f7b731" }, { t:")", c:"#f8f8f2" }] },
+  { tokens: [{ t: "# Call now 👇", c: "#636d83" }] },
+  { tokens: [{ t: "hire_joshua", c: "#a855f7" }, { t: "(", c: "#f8f8f2" }, { t: '"your_next_project"', c: "#f7b731" }, { t: ")", c: "#f8f8f2" }] },
 ];
 
 function ContactCodeWindow() {
   const [visible, setVisible] = useState(0);
-  const [chars, setChars]     = useState(0);
-  const [done, setDone]       = useState(false);
+  const [chars, setChars] = useState(0);
+  const [done, setDone] = useState(false);
 
   useEffect(() => {
     if (done) {
@@ -983,23 +980,23 @@ function ContactCodeWindow() {
         }
       `}</style>
       {/* Title bar */}
-      <div style={{ display:"flex", alignItems:"center", gap:8, padding:"11px 16px", borderBottom:"1px solid rgba(255,255,255,0.06)", background:"rgba(255,255,255,0.02)" }}>
-        {[["#ff5f57","#febc2e","#28c840"]].flat().map((col,i) => (
-          <div key={i} style={{ width:11, height:11, borderRadius:"50%", background:col }} />
+      <div style={{ display: "flex", alignItems: "center", gap: 8, padding: "11px 16px", borderBottom: "1px solid rgba(255,255,255,0.06)", background: "rgba(255,255,255,0.02)" }}>
+        {[["#ff5f57", "#febc2e", "#28c840"]].flat().map((col, i) => (
+          <div key={i} style={{ width: 11, height: 11, borderRadius: "50%", background: col }} />
         ))}
-        <span style={{ marginLeft:8, fontSize:11, color:"rgba(255,255,255,0.3)", fontFamily:"system-ui" }}>&lt;&gt; collaborate.py</span>
-        <span style={{ marginLeft:"auto", fontSize:9, color:"rgba(0,245,212,0.45)", letterSpacing:1 }}>Python 3.11</span>
+        <span style={{ marginLeft: 8, fontSize: 11, color: "rgba(255,255,255,0.3)", fontFamily: "system-ui" }}>&lt;&gt; collaborate.py</span>
+        <span style={{ marginLeft: "auto", fontSize: 9, color: "rgba(0,245,212,0.45)", letterSpacing: 1 }}>Python 3.11</span>
       </div>
 
       {/* Code */}
-      <div style={{ padding:"18px 20px", minHeight:320 }}>
+      <div style={{ padding: "18px 20px", minHeight: 320 }}>
         {CONTACT_LINES.slice(0, visible).map((line, idx) => {
           const text = line.tokens.map(t => t.t).join("");
           return (
-            <div key={idx} style={{ display:"flex", minHeight:20, fontFamily:"'Fira Code','Courier New',monospace", fontSize:12.5, lineHeight:"20px" }}>
-              <span style={{ color:"#2d3040", marginRight:16, minWidth:18, textAlign:"right", userSelect:"none" }}>{idx+1}</span>
+            <div key={idx} style={{ display: "flex", minHeight: 20, fontFamily: "'Fira Code','Courier New',monospace", fontSize: 12.5, lineHeight: "20px" }}>
+              <span style={{ color: "#2d3040", marginRight: 16, minWidth: 18, textAlign: "right", userSelect: "none" }}>{idx + 1}</span>
               <span>
-                {line.tokens.map((tk, ti) => <span key={ti} style={{ color:tk.c }}>{tk.t}</span>)}
+                {line.tokens.map((tk, ti) => <span key={ti} style={{ color: tk.c }}>{tk.t}</span>)}
               </span>
             </div>
           );
@@ -1017,11 +1014,11 @@ function ContactCodeWindow() {
             return { t: tk.t.slice(0, take), c: tk.c };
           }).filter(Boolean);
           return (
-            <div style={{ display:"flex", minHeight:20, fontFamily:"'Fira Code','Courier New',monospace", fontSize:12.5, lineHeight:"20px" }}>
-              <span style={{ color:"#2d3040", marginRight:16, minWidth:18, textAlign:"right", userSelect:"none" }}>{visible+1}</span>
+            <div style={{ display: "flex", minHeight: 20, fontFamily: "'Fira Code','Courier New',monospace", fontSize: 12.5, lineHeight: "20px" }}>
+              <span style={{ color: "#2d3040", marginRight: 16, minWidth: 18, textAlign: "right", userSelect: "none" }}>{visible + 1}</span>
               <span>
-                {partialTokens.map((tk, ti) => <span key={ti} style={{ color:tk.c }}>{tk.t}</span>)}
-                <span style={{ display:"inline-block", width:2, height:13, background:"#00f5d4", marginLeft:1, verticalAlign:"middle", animation:"blink 1s infinite" }} />
+                {partialTokens.map((tk, ti) => <span key={ti} style={{ color: tk.c }}>{tk.t}</span>)}
+                <span style={{ display: "inline-block", width: 2, height: 13, background: "#00f5d4", marginLeft: 1, verticalAlign: "middle", animation: "blink 1s infinite" }} />
               </span>
             </div>
           );
@@ -1029,11 +1026,11 @@ function ContactCodeWindow() {
       </div>
 
       {/* Status bar */}
-      <div style={{ borderTop:"1px solid rgba(255,255,255,0.05)", padding:"6px 16px", display:"flex", justifyContent:"space-between", background:"rgba(0,245,212,0.03)" }}>
-        <span style={{ fontSize:9, color:"#2d3040", fontFamily:"system-ui" }}>Ln {visible+1}, Col {chars+1}</span>
-        <div style={{ display:"flex", alignItems:"center", gap:6 }}>
-          <div style={{ width:5, height:5, borderRadius:"50%", background:"#00f5d4", boxShadow:"0 0 6px #00f5d4", animation:"pulse 2s infinite" }} />
-          <span style={{ fontSize:9, color:"rgba(0,245,212,0.5)", fontFamily:"system-ui" }}>Ready to Collaborate</span>
+      <div style={{ borderTop: "1px solid rgba(255,255,255,0.05)", padding: "6px 16px", display: "flex", justifyContent: "space-between", background: "rgba(0,245,212,0.03)" }}>
+        <span style={{ fontSize: 9, color: "#2d3040", fontFamily: "system-ui" }}>Ln {visible + 1}, Col {chars + 1}</span>
+        <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+          <div style={{ width: 5, height: 5, borderRadius: "50%", background: "#00f5d4", boxShadow: "0 0 6px #00f5d4", animation: "pulse 2s infinite" }} />
+          <span style={{ fontSize: 9, color: "rgba(0,245,212,0.5)", fontFamily: "system-ui" }}>Ready to Collaborate</span>
         </div>
       </div>
     </div>
@@ -1089,7 +1086,7 @@ function Portfolio() {
 
   const px2 = mouse.x - 0.5, py2 = mouse.y - 0.5;
 
-  const navLinks = [["Home","#hero"],["About","#about"],["Services","#services"],["Projects","#projects"],["Contact","#contact"]];
+  const navLinks = [["Home", "#hero"], ["About", "#about"], ["Services", "#services"], ["Projects", "#projects"], ["Contact", "#contact"]];
 
 
 
@@ -1124,16 +1121,16 @@ function Portfolio() {
             <a key={n} href={h} onClick={() => setMenuOpen(false)} style={{ fontSize: isMobile ? 32 : 40, fontWeight: 900, color: "#fff", letterSpacing: -1 }}>{n}</a>
           ))}
           <div style={{ display: "flex", gap: 20, marginTop: 20 }}>
-            <a href="https://github.com/JoshuaGashan" target="_blank" rel="noreferrer noopener" style={{ color: "#555", display:"flex" }}><GitHubIcon size={22} /></a>
-            <a href="https://www.linkedin.com/in/joshua-gashan-315556254/" target="_blank" rel="noreferrer noopener" style={{ color: "#555" }}><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg></a>
-            <a href="https://wa.me/94767159028?text=Hi%20Joshua!" target="_blank" rel="noreferrer noopener" style={{ color: "#555" }}><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg></a>
-            <a href="https://www.youtube.com/@Joshua_Gashan" target="_blank" rel="noreferrer noopener" style={{ color: "#555" }}><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+            <a href="https://github.com/JoshuaGashan" target="_blank" rel="noreferrer noopener" style={{ color: "#555", display: "flex" }}><GitHubIcon size={22} /></a>
+            <a href="https://www.linkedin.com/in/joshua-gashan-315556254/" target="_blank" rel="noreferrer noopener" style={{ color: "#555" }}><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" /></svg></a>
+            <a href="https://wa.me/94767159028?text=Hi%20Joshua!" target="_blank" rel="noreferrer noopener" style={{ color: "#555" }}><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z" /></svg></a>
+            <a href="https://www.youtube.com/@Joshua_Gashan" target="_blank" rel="noreferrer noopener" style={{ color: "#555" }}><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" /></svg></a>
           </div>
           <a href={CV_PDF} download="Joshua_Gashan_CV.pdf" className="glow-btn" style={{ marginTop: 10, padding: "12px 28px", background: "linear-gradient(135deg,#00f5d4,#00c4a9)", color: "#070710", fontWeight: 700, fontSize: 12, letterSpacing: 2, textTransform: "uppercase", borderRadius: 4, transition: "all 0.3s" }}>Download CV</a>
         </div>
       )}
 
-            {/* NAV */}
+      {/* NAV */}
       <nav style={{
         position: "static",
         height: 70, display: "flex", alignItems: "center",
@@ -1142,23 +1139,23 @@ function Portfolio() {
         background: "transparent",
       }}>
         {/* Logo + lightbox */}
-        <div style={{ position:"relative", display:"flex", alignItems:"center", gap:10 }}>
+        <div style={{ position: "relative", display: "flex", alignItems: "center", gap: 10 }}>
           {/* JG text */}
-          <div style={{ fontWeight:900, fontSize: isMobile ? 20 : 29, letterSpacing:-1, background:"linear-gradient(135deg,#00f5d4,#a855f7)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>JG</div>
+          <div style={{ fontWeight: 900, fontSize: isMobile ? 20 : 29, letterSpacing: -1, background: "linear-gradient(135deg,#00f5d4,#a855f7)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>JG</div>
           {/* Logo image */}
           <img
             src={LOGO_IMG}
             alt="Joshua Gashan"
             onClick={() => setLogoOpen(true)}
             style={{
-              width: 33, height: 33, borderRadius:"50%",
-              objectFit:"cover", cursor:"pointer",
-              border:"2px solid rgba(255,255,255,0.12)",
-              boxShadow:"0 0 14px rgba(0,245,212,0.25)",
-              transition:"all 0.2s",
+              width: 33, height: 33, borderRadius: "50%",
+              objectFit: "cover", cursor: "pointer",
+              border: "2px solid rgba(255,255,255,0.12)",
+              boxShadow: "0 0 14px rgba(0,245,212,0.25)",
+              transition: "all 0.2s",
             }}
-            onMouseEnter={e=>{ e.currentTarget.style.boxShadow="0 0 22px rgba(0,245,212,0.5)"; e.currentTarget.style.borderColor="rgba(0,245,212,0.5)"; }}
-            onMouseLeave={e=>{ e.currentTarget.style.boxShadow="0 0 14px rgba(0,245,212,0.25)"; e.currentTarget.style.borderColor="rgba(255,255,255,0.12)"; }}
+            onMouseEnter={e => { e.currentTarget.style.boxShadow = "0 0 22px rgba(0,245,212,0.5)"; e.currentTarget.style.borderColor = "rgba(0,245,212,0.5)"; }}
+            onMouseLeave={e => { e.currentTarget.style.boxShadow = "0 0 14px rgba(0,245,212,0.25)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.12)"; }}
           />
         </div>
 
@@ -1167,34 +1164,34 @@ function Portfolio() {
           <div
             onClick={() => setLogoOpen(false)}
             style={{
-              position:"fixed", inset:0, zIndex:9999,
-              background:"rgba(0,0,0,0.85)",
-              display:"flex", alignItems:"center", justifyContent:"center",
-              backdropFilter:"blur(12px)",
-              animation:"fadeIn 0.2s ease",
+              position: "fixed", inset: 0, zIndex: 9999,
+              background: "rgba(0,0,0,0.85)",
+              display: "flex", alignItems: "center", justifyContent: "center",
+              backdropFilter: "blur(12px)",
+              animation: "fadeIn 0.2s ease",
             }}
           >
-            <div onClick={e=>e.stopPropagation()} style={{ position:"relative", maxWidth:"90vw", maxHeight:"90vh" }}>
+            <div onClick={e => e.stopPropagation()} style={{ position: "relative", maxWidth: "90vw", maxHeight: "90vh" }}>
               <img
                 src={LOGO_IMG}
                 alt="Joshua Gashan"
                 style={{
-                  width:"min(480px,85vw)", height:"min(480px,85vw)",
-                  borderRadius:"50%",
-                  objectFit:"cover",
-                  boxShadow:"0 0 60px rgba(0,245,212,0.3), 0 0 120px rgba(168,85,247,0.2)",
-                  animation:"scaleIn 0.25s cubic-bezier(0.34,1.56,0.64,1)",
+                  width: "min(480px,85vw)", height: "min(480px,85vw)",
+                  borderRadius: "50%",
+                  objectFit: "cover",
+                  boxShadow: "0 0 60px rgba(0,245,212,0.3), 0 0 120px rgba(168,85,247,0.2)",
+                  animation: "scaleIn 0.25s cubic-bezier(0.34,1.56,0.64,1)",
                 }}
               />
               <button
                 onClick={() => setLogoOpen(false)}
                 style={{
-                  position:"absolute", top:-14, right:-14,
-                  width:32, height:32, borderRadius:"50%",
-                  background:"rgba(255,255,255,0.1)", border:"1px solid rgba(255,255,255,0.2)",
-                  color:"#fff", fontSize:16, cursor:"pointer",
-                  display:"flex", alignItems:"center", justifyContent:"center",
-                  backdropFilter:"blur(8px)",
+                  position: "absolute", top: -14, right: -14,
+                  width: 32, height: 32, borderRadius: "50%",
+                  background: "rgba(255,255,255,0.1)", border: "1px solid rgba(255,255,255,0.2)",
+                  color: "#fff", fontSize: 16, cursor: "pointer",
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  backdropFilter: "blur(8px)",
                 }}
               >×</button>
             </div>
@@ -1205,33 +1202,33 @@ function Portfolio() {
           </div>
         )}
         {isMobile ? (
-          <div style={{ display:"flex", alignItems:"center", gap:4 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
             {SOCIAL.map(s => (
               <a key={s.key} href={s.url} target="_blank" rel="noopener noreferrer"
-                style={{ color:"rgba(255,255,255,0.4)", display:"flex", alignItems:"center", justifyContent:"center", width:34, height:34, borderRadius:9, transition:"all 0.2s", WebkitTapHighlightColor:"transparent" }}
-                onTouchStart={e => { e.currentTarget.style.color="#00f5d4"; }}
-                onTouchEnd={e => { e.currentTarget.style.color="rgba(255,255,255,0.4)"; }}
-                onMouseEnter={e => { e.currentTarget.style.color="#00f5d4"; }}
-                onMouseLeave={e => { e.currentTarget.style.color="rgba(255,255,255,0.4)"; }}>
+                style={{ color: "rgba(255,255,255,0.4)", display: "flex", alignItems: "center", justifyContent: "center", width: 34, height: 34, borderRadius: 9, transition: "all 0.2s", WebkitTapHighlightColor: "transparent" }}
+                onTouchStart={e => { e.currentTarget.style.color = "#00f5d4"; }}
+                onTouchEnd={e => { e.currentTarget.style.color = "rgba(255,255,255,0.4)"; }}
+                onMouseEnter={e => { e.currentTarget.style.color = "#00f5d4"; }}
+                onMouseLeave={e => { e.currentTarget.style.color = "rgba(255,255,255,0.4)"; }}>
                 <SocialIcon k={s.key} size={18} />
               </a>
             ))}
-            <button onClick={() => setMenuOpen(true)} style={{ background:"none", border:"none", color:"#fff", cursor:"pointer", padding:7, marginLeft:2 }}>
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+            <button onClick={() => setMenuOpen(true)} style={{ background: "none", border: "none", color: "#fff", cursor: "pointer", padding: 7, marginLeft: 2 }}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round"><line x1="3" y1="6" x2="21" y2="6" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="18" x2="21" y2="18" /></svg>
             </button>
           </div>
         ) : (
-          <div style={{ display:"flex", gap: isTablet ? 20 : 36, alignItems:"center" }}>
-            {navLinks.map(([n,h]) => (
-              <a key={n} href={h} style={{ fontSize: isMobile ? 10 : 14, letterSpacing:2, textTransform:"uppercase", color:"rgba(255,255,255,0.75)", fontWeight:600, transition:"color 0.2s", textDecoration:"none" }}
-                onMouseEnter={e => e.target.style.color="#00f5d4"} onMouseLeave={e => e.target.style.color="#555"}>{n}</a>
+          <div style={{ display: "flex", gap: isTablet ? 20 : 36, alignItems: "center" }}>
+            {navLinks.map(([n, h]) => (
+              <a key={n} href={h} style={{ fontSize: isMobile ? 10 : 14, letterSpacing: 2, textTransform: "uppercase", color: "rgba(255,255,255,0.75)", fontWeight: 600, transition: "color 0.2s", textDecoration: "none" }}
+                onMouseEnter={e => e.target.style.color = "#00f5d4"} onMouseLeave={e => e.target.style.color = "#555"}>{n}</a>
             ))}
-            <div style={{ width:1, height:20, background:"#222" }} />
+            <div style={{ width: 1, height: 20, background: "#222" }} />
             {SOCIAL.map(s => (
               <a key={s.key} href={s.url} target="_blank" rel="noopener noreferrer"
-                style={{ color:"#555", display:"flex", transition:"color 0.2s" }}
-                onMouseEnter={e => { e.currentTarget.style.color="#00f5d4"; }}
-                onMouseLeave={e => { e.currentTarget.style.color="#555"; }}>
+                style={{ color: "#555", display: "flex", transition: "color 0.2s" }}
+                onMouseEnter={e => { e.currentTarget.style.color = "#00f5d4"; }}
+                onMouseLeave={e => { e.currentTarget.style.color = "#555"; }}>
                 <SocialIcon k={s.key} size={18} />
               </a>
             ))}
@@ -1239,7 +1236,7 @@ function Portfolio() {
         )}
       </nav>
 
-            {/* HERO */}
+      {/* HERO */}
       <section id="hero" style={{
         minHeight: "100svh",
         position: "relative",
@@ -1261,59 +1258,59 @@ function Portfolio() {
           zIndex: 1,
           pointerEvents: "none",
         }}>
-          <div style={{ position:"absolute", bottom:0, left:0, right:0, height:isMobile?"140px":"60px", background:"linear-gradient(to bottom, transparent, #070710)", zIndex:2 }}/>
-          <div style={{ position:"absolute", top:0, left:0, bottom:0, width:"50px", background:"linear-gradient(to right, #070710, transparent)", zIndex:2 }}/>
+          <div style={{ position: "absolute", bottom: 0, left: 0, right: 0, height: isMobile ? "140px" : "60px", background: "linear-gradient(to bottom, transparent, #070710)", zIndex: 2 }} />
+          <div style={{ position: "absolute", top: 0, left: 0, bottom: 0, width: "50px", background: "linear-gradient(to right, #070710, transparent)", zIndex: 2 }} />
           <img src={PROFILE_IMG} alt="Joshua Gashan" style={{
-            width:"100%", height:"100%",
-            objectFit:"contain",
+            width: "100%", height: "100%",
+            objectFit: "contain",
             objectPosition: isMobile ? "top right" : "bottom right",
-            mixBlendMode:"multiply",
-            filter:"contrast(1.05) brightness(1.0)",
+            mixBlendMode: "multiply",
+            filter: "contrast(1.05) brightness(1.0)",
             opacity: isMobile ? 0.85 : 0.88,
-          }}/>
+          }} />
         </div>
 
         {/* ── TOP: Name + Typewriter ── */}
         <div style={{
-          position:"relative", zIndex:5,
+          position: "relative", zIndex: 5,
           padding: isMobile ? "90px 22px 0" : isTablet ? "0 40px" : `0 ${px_outer}`,
           flex: isMobile ? "0 0 auto" : "unset",
         }}>
           <h1 style={{
             fontSize: isMobile ? "clamp(46px,13vw,64px)" : isTablet ? "clamp(54px,9vw,80px)" : isTV ? "clamp(80px,7vw,130px)" : "clamp(110px,13vw,170px)",
-            fontWeight:900, letterSpacing:-3, lineHeight:0.92,
+            fontWeight: 900, letterSpacing: -3, lineHeight: 0.92,
             marginBottom: isMobile ? 10 : 16,
           }}>
-            <span style={{ color:"#fff", display:"block" }}>Joshua</span>
+            <span style={{ color: "#fff", display: "block" }}>Joshua</span>
             <span style={{
-              display:"block",
-              background:"linear-gradient(135deg,#00f5d4 0%,#a855f7 50%,#ff2d78 100%)",
-              backgroundSize:"200% auto",
-              WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent",
-              animation:"shimmer 4s linear infinite",
-              filter:"drop-shadow(0 0 20px rgba(168,85,247,0.4))",
+              display: "block",
+              background: "linear-gradient(135deg,#00f5d4 0%,#a855f7 50%,#ff2d78 100%)",
+              backgroundSize: "200% auto",
+              WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
+              animation: "shimmer 4s linear infinite",
+              filter: "drop-shadow(0 0 20px rgba(168,85,247,0.4))",
             }}>Gashan.</span>
           </h1>
 
           {/* Typewriter */}
-          <div style={{ marginBottom:0, minHeight: isMobile ? 34 : 50 }}>
-            <div style={{ display:"inline-flex", alignItems:"center" }}>
-              <span style={{ fontSize: isMobile ? 22 : 30, fontWeight:300, color:"rgba(0,245,212,0.3)" }}>{"<"}</span>
+          <div style={{ marginBottom: 0, minHeight: isMobile ? 34 : 50 }}>
+            <div style={{ display: "inline-flex", alignItems: "center" }}>
+              <span style={{ fontSize: isMobile ? 22 : 30, fontWeight: 300, color: "rgba(0,245,212,0.3)" }}>{"<"}</span>
               <span style={{
                 fontSize: isMobile ? 15 : isTV ? 34 : 22,
-                fontWeight:800, letterSpacing:-0.5,
-                background:"linear-gradient(135deg,#fff,rgba(255,255,255,0.75))",
-                WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent",
-                minWidth: isMobile ? 120 : 200, display:"inline-block",
+                fontWeight: 800, letterSpacing: -0.5,
+                background: "linear-gradient(135deg,#fff,rgba(255,255,255,0.75))",
+                WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
+                minWidth: isMobile ? 120 : 200, display: "inline-block",
               }}>{typed}
                 <span style={{
-                  display:"inline-block", width:2, height: isMobile ? 15 : 22,
-                  background:"#00f5d4", marginLeft:2, verticalAlign:"middle",
-                  borderRadius:2, animation:"blink 0.85s step-end infinite",
-                  boxShadow:"0 0 8px #00f5d4", WebkitTextFillColor:"initial",
-                }}/>
+                  display: "inline-block", width: 2, height: isMobile ? 15 : 22,
+                  background: "#00f5d4", marginLeft: 2, verticalAlign: "middle",
+                  borderRadius: 2, animation: "blink 0.85s step-end infinite",
+                  boxShadow: "0 0 8px #00f5d4", WebkitTextFillColor: "initial",
+                }} />
               </span>
-              <span style={{ fontSize: isMobile ? 22 : 30, fontWeight:300, color:"rgba(168,85,247,0.3)", marginLeft:3 }}>{" />"}</span>
+              <span style={{ fontSize: isMobile ? 22 : 30, fontWeight: 300, color: "rgba(168,85,247,0.3)", marginLeft: 3 }}>{" />"}</span>
             </div>
           </div>
         </div>
@@ -1321,38 +1318,38 @@ function Portfolio() {
         {/* ── MIDDLE (mobile only): Stats — vertical stacked ── */}
         {isMobile && (
           <div style={{
-            position:"relative", zIndex:5,
-            padding:"0 22px",
-            flex:"0 0 auto",
-            marginTop:20,
-            display:"flex",
-            flexDirection:"column",
-            gap:0,
+            position: "relative", zIndex: 5,
+            padding: "0 22px",
+            flex: "0 0 auto",
+            marginTop: 20,
+            display: "flex",
+            flexDirection: "column",
+            gap: 0,
           }}>
             {[
-              {end:5,suffix:"+",label:"Projects Built"},
-              {end:3,suffix:"",label:"Languages"},
-              
-              {text:"ML+Web",label:"Expertise"},
-            ].map((s,i)=>(
+              { end: 5, suffix: "+", label: "Projects Built" },
+              { end: 3, suffix: "", label: "Languages" },
+
+              { text: "ML+Web", label: "Expertise" },
+            ].map((s, i) => (
               <div key={s.label} style={{
-                display:"flex", flexDirection:"column",
-                padding:"5px 0",
+                display: "flex", flexDirection: "column",
+                padding: "5px 0",
               }}>
                 <div style={{
-                  fontSize:30, fontWeight:900, letterSpacing:-1.5, lineHeight:1,
-                  color:"#fff", marginBottom:3,
+                  fontSize: 30, fontWeight: 900, letterSpacing: -1.5, lineHeight: 1,
+                  color: "#fff", marginBottom: 3,
                 }}>
-                  {s.end !== undefined ? <CountUp end={s.end} suffix={s.suffix} duration={1800}/> : s.text}
+                  {s.end !== undefined ? <CountUp end={s.end} suffix={s.suffix} duration={1800} /> : s.text}
                 </div>
-                <div style={{ fontSize:10, letterSpacing:2, textTransform:"uppercase", color:"#445", fontWeight:600 }}>{s.label}</div>
+                <div style={{ fontSize: 10, letterSpacing: 2, textTransform: "uppercase", color: "#445", fontWeight: 600 }}>{s.label}</div>
               </div>
             ))}
           </div>
         )}
         {/* ── BOTTOM: Bio + Buttons + Stats (desktop) ── */}
         <div style={{
-          position:"relative", zIndex:5,
+          position: "relative", zIndex: 5,
           padding: isMobile ? "0 22px 36px" : isTablet ? "0 40px" : `0 ${px_outer}`,
           flex: isMobile ? "0 0 auto" : "unset",
           marginTop: isMobile ? "auto" : 0,
@@ -1361,7 +1358,7 @@ function Portfolio() {
           {/* Bio */}
           <p style={{
             fontSize: isMobile ? 13 : isTV ? 18 : 16,
-            color:"#667", lineHeight:1.75,
+            color: "#667", lineHeight: 1.75,
             maxWidth: isMobile ? "100%" : isTablet ? 400 : 580,
             marginBottom: isMobile ? 20 : 36,
             marginTop: isMobile ? 0 : 20,
@@ -1373,22 +1370,22 @@ function Portfolio() {
 
           {/* QR + Stats side by side — desktop only */}
           {!isMobile && (
-            <div style={{ display:"flex", flexDirection:"row", alignItems:"center", gap:28, marginBottom:20 }}>
+            <div style={{ display: "flex", flexDirection: "row", alignItems: "center", gap: 28, marginBottom: 20 }}>
               {/* QR */}
-              <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:4 }}>
+              <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4 }}>
                 <img src={QR_IMG} alt="Scan QR" style={{
-                  width:110, height:110, display:"block", borderRadius:4, filter:"invert(1)",
-                }}/>
-                <p style={{ fontSize:7, letterSpacing:1.5, textTransform:"uppercase", color:"rgba(255,255,255,0.3)" }}>View on mobile</p>
+                  width: 110, height: 110, display: "block", borderRadius: 4, filter: "invert(1)",
+                }} />
+                <p style={{ fontSize: 7, letterSpacing: 1.5, textTransform: "uppercase", color: "rgba(255,255,255,0.3)" }}>View on mobile</p>
               </div>
               {/* Stats */}
-              <div style={{ display:"flex", gap:32, alignItems:"flex-start" }}>
-                {[{end:5,suffix:"+",label:"Projects Built"},{end:3,suffix:"",label:"Languages"},{text:"ML+Web",label:"Expertise"}].map(s=>(
+              <div style={{ display: "flex", gap: 32, alignItems: "flex-start" }}>
+                {[{ end: 5, suffix: "+", label: "Projects Built" }, { end: 3, suffix: "", label: "Languages" }, { text: "ML+Web", label: "Expertise" }].map(s => (
                   <div key={s.label}>
-                    <div style={{ fontSize: isTV ? 32 : 30, fontWeight:900, letterSpacing:-1, background:"linear-gradient(135deg,#fff,#888)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>
-                      {s.end !== undefined ? <CountUp end={s.end} suffix={s.suffix} duration={1800}/> : s.text}
+                    <div style={{ fontSize: isTV ? 32 : 30, fontWeight: 900, letterSpacing: -1, background: "linear-gradient(135deg,#fff,#888)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>
+                      {s.end !== undefined ? <CountUp end={s.end} suffix={s.suffix} duration={1800} /> : s.text}
                     </div>
-                    <div style={{ fontSize:9, letterSpacing:2, textTransform:"uppercase", color:"#555", marginTop:3 }}>{s.label}</div>
+                    <div style={{ fontSize: 9, letterSpacing: 2, textTransform: "uppercase", color: "#555", marginTop: 3 }}>{s.label}</div>
                   </div>
                 ))}
               </div>
@@ -1398,7 +1395,7 @@ function Portfolio() {
           {/* Buttons */}
           <style>{`.cta-btn{text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;font-weight:700;font-size:12px;letter-spacing:2px;text-transform:uppercase;border-radius:10px;transition:all 0.3s cubic-bezier(0.34,1.56,0.64,1);cursor:pointer;}.cta-btn:hover{transform:translateY(-2px);}`}</style>
           <div style={{
-            display:"flex", gap:10,
+            display: "flex", gap: 10,
             flexDirection: isMobile ? "column" : "row",
             marginBottom: isMobile ? 0 : 52,
             maxWidth: isMobile ? "100%" : "auto",
@@ -1406,23 +1403,23 @@ function Portfolio() {
           }}>
             <a href="mailto:Joshuagashan@gmail.com" className="cta-btn" style={{
               padding: isMobile ? "13px 26px" : "22px 60px",
-              background:"rgba(168,85,247,0.08)", color:"#a855f7",
-              border:"1px solid rgba(168,85,247,0.45)", backdropFilter:"blur(12px)",
-              boxShadow:"0 0 20px rgba(168,85,247,0.12), inset 0 1px 0 rgba(168,85,247,0.2)",
+              background: "rgba(168,85,247,0.08)", color: "#a855f7",
+              border: "1px solid rgba(168,85,247,0.45)", backdropFilter: "blur(12px)",
+              boxShadow: "0 0 20px rgba(168,85,247,0.12), inset 0 1px 0 rgba(168,85,247,0.2)",
             }}
-              onMouseEnter={e=>{e.currentTarget.style.boxShadow="0 0 32px rgba(168,85,247,0.3)";e.currentTarget.style.borderColor="rgba(168,85,247,0.85)";e.currentTarget.style.background="rgba(168,85,247,0.15)";}}
-              onMouseLeave={e=>{e.currentTarget.style.boxShadow="0 0 20px rgba(168,85,247,0.12)";e.currentTarget.style.borderColor="rgba(168,85,247,0.45)";e.currentTarget.style.background="rgba(168,85,247,0.08)";}}>
+              onMouseEnter={e => { e.currentTarget.style.boxShadow = "0 0 32px rgba(168,85,247,0.3)"; e.currentTarget.style.borderColor = "rgba(168,85,247,0.85)"; e.currentTarget.style.background = "rgba(168,85,247,0.15)"; }}
+              onMouseLeave={e => { e.currentTarget.style.boxShadow = "0 0 20px rgba(168,85,247,0.12)"; e.currentTarget.style.borderColor = "rgba(168,85,247,0.45)"; e.currentTarget.style.background = "rgba(168,85,247,0.08)"; }}>
               Contact Me
             </a>
             <a href={CV_PDF} download="Joshua_Gashan_CV.pdf" className="cta-btn" style={{
               padding: isMobile ? "13px 26px" : "22px 60px",
-              background:"rgba(255,255,255,0.04)", color:"rgba(255,255,255,0.6)",
-              border:"1px solid rgba(255,255,255,0.12)", backdropFilter:"blur(12px)",
-              boxShadow:"inset 0 1px 0 rgba(255,255,255,0.08)",
+              background: "rgba(255,255,255,0.04)", color: "rgba(255,255,255,0.6)",
+              border: "1px solid rgba(255,255,255,0.12)", backdropFilter: "blur(12px)",
+              boxShadow: "inset 0 1px 0 rgba(255,255,255,0.08)",
             }}
-              onMouseEnter={e=>{e.currentTarget.style.color="#fff";e.currentTarget.style.borderColor="rgba(255,255,255,0.3)";e.currentTarget.style.background="rgba(255,255,255,0.08)";}}
-              onMouseLeave={e=>{e.currentTarget.style.color="rgba(255,255,255,0.6)";e.currentTarget.style.borderColor="rgba(255,255,255,0.12)";e.currentTarget.style.background="rgba(255,255,255,0.04)";}}>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              onMouseEnter={e => { e.currentTarget.style.color = "#fff"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.3)"; e.currentTarget.style.background = "rgba(255,255,255,0.08)"; }}
+              onMouseLeave={e => { e.currentTarget.style.color = "rgba(255,255,255,0.6)"; e.currentTarget.style.borderColor = "rgba(255,255,255,0.12)"; e.currentTarget.style.background = "rgba(255,255,255,0.04)"; }}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" /></svg>
               Download CV
             </a>
 
@@ -1435,89 +1432,89 @@ function Portfolio() {
 
         </div>
 
-        <FloatingTags isMobile={isMobile}/>
+        <FloatingTags isMobile={isMobile} />
       </section>
       {/* ABOUT */}
       <section id="about" style={{ padding: `${section_py} ${px_outer}`, position: "relative", overflow: "hidden", borderTop: "1px solid #ffffff06" }}>
 
         {/* Ambient blobs */}
-        <div style={{ position:"absolute", top:"-10%", right:"-5%", width:500, height:500, borderRadius:"50%", background:"radial-gradient(circle,#a855f712,transparent 70%)", pointerEvents:"none" }} />
-        <div style={{ position:"absolute", bottom:"-10%", left:"-5%", width:400, height:400, borderRadius:"50%", background:"radial-gradient(circle,#00f5d40a,transparent 70%)", pointerEvents:"none" }} />
+        <div style={{ position: "absolute", top: "-10%", right: "-5%", width: 500, height: 500, borderRadius: "50%", background: "radial-gradient(circle,#a855f712,transparent 70%)", pointerEvents: "none" }} />
+        <div style={{ position: "absolute", bottom: "-10%", left: "-5%", width: 400, height: 400, borderRadius: "50%", background: "radial-gradient(circle,#00f5d40a,transparent 70%)", pointerEvents: "none" }} />
 
-        <div style={{ maxWidth: maxW, margin:"0 auto", position:"relative", zIndex:2 }}>
+        <div style={{ maxWidth: maxW, margin: "0 auto", position: "relative", zIndex: 2 }}>
 
           {/* ── Section header ── */}
           <FadeUp style={{ marginBottom: isMobile ? 40 : 64 }}>
-            <div style={{ display:"flex", alignItems:"center", gap:16, marginBottom:16 }}>
-              <div style={{ height:1, width:40, background:"linear-gradient(90deg,#00f5d4,transparent)" }} />
-              <p style={{ fontSize:13, letterSpacing:5, textTransform:"uppercase", color:"#00f5d4" }}>Who I Am</p>
-              <div style={{ height:1, flex:1, background:"linear-gradient(90deg,#00f5d415,transparent)" }} />
+            <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 16 }}>
+              <div style={{ height: 1, width: 40, background: "linear-gradient(90deg,#00f5d4,transparent)" }} />
+              <p style={{ fontSize: 13, letterSpacing: 5, textTransform: "uppercase", color: "#00f5d4" }}>Who I Am</p>
+              <div style={{ height: 1, flex: 1, background: "linear-gradient(90deg,#00f5d415,transparent)" }} />
             </div>
-            <h2 style={{ fontSize: isMobile ? "clamp(34px,9vw,50px)" : "clamp(40px,5vw,62px)", fontWeight:900, letterSpacing:-2.5, lineHeight:0.95 }}>
-              <span style={{ display:"block", color:"#fff" }}>About</span>
-              <span style={{ display:"block", background:"linear-gradient(135deg,#00f5d4,#a855f7,#ff2d78)", backgroundSize:"200% auto", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", animation:"shimmer 4s linear infinite" }}>Me.</span>
+            <h2 style={{ fontSize: isMobile ? "clamp(34px,9vw,50px)" : "clamp(40px,5vw,62px)", fontWeight: 900, letterSpacing: -2.5, lineHeight: 0.95 }}>
+              <span style={{ display: "block", color: "#fff" }}>About</span>
+              <span style={{ display: "block", background: "linear-gradient(135deg,#00f5d4,#a855f7,#ff2d78)", backgroundSize: "200% auto", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", animation: "shimmer 4s linear infinite" }}>Me.</span>
             </h2>
           </FadeUp>
 
           {/* ── Main grid ── */}
           <FadeUp delay={100}>
-            <div style={{ display:"grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: isMobile ? 16 : 24 }}>
+            <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr", gap: isMobile ? 16 : 24 }}>
 
               {/* ── LEFT COL ── */}
-              <div style={{ display:"flex", flexDirection:"column", gap:16 }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
 
                 {/* Bio card — full width glass */}
                 <div style={{
-                  background:"linear-gradient(135deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01))",
-                  border:"1px solid rgba(255,255,255,0.08)",
-                  borderRadius:20, padding: isMobile ? "24px" : "32px",
-                  position:"relative", overflow:"hidden",
-                  backdropFilter:"blur(12px)",
+                  background: "linear-gradient(135deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01))",
+                  border: "1px solid rgba(255,255,255,0.08)",
+                  borderRadius: 20, padding: isMobile ? "24px" : "32px",
+                  position: "relative", overflow: "hidden",
+                  backdropFilter: "blur(12px)",
                 }}>
                   {/* Top accent bar */}
-                  <div style={{ position:"absolute", top:0, left:0, right:0, height:2, background:"linear-gradient(90deg,#00f5d4,#a855f7,transparent)" }} />
+                  <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg,#00f5d4,#a855f7,transparent)" }} />
                   {/* Glow corner */}
-                  <div style={{ position:"absolute", top:-40, right:-40, width:150, height:150, borderRadius:"50%", background:"radial-gradient(circle,#00f5d415,transparent 70%)" }} />
+                  <div style={{ position: "absolute", top: -40, right: -40, width: 150, height: 150, borderRadius: "50%", background: "radial-gradient(circle,#00f5d415,transparent 70%)" }} />
 
-                  <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:16 }}>
-                    <div style={{ width:8, height:8, borderRadius:"50%", background:"#00f5d4", boxShadow:"0 0 10px #00f5d4", animation:"pulse 2s infinite" }} />
-                    <p style={{ fontSize:10, letterSpacing:3, textTransform:"uppercase", color:"#00f5d4", fontWeight:600 }}>Bio</p>
+                  <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 16 }}>
+                    <div style={{ width: 8, height: 8, borderRadius: "50%", background: "#00f5d4", boxShadow: "0 0 10px #00f5d4", animation: "pulse 2s infinite" }} />
+                    <p style={{ fontSize: 10, letterSpacing: 3, textTransform: "uppercase", color: "#00f5d4", fontWeight: 600 }}>Bio</p>
                   </div>
 
-                  <p style={{ color:"#888", fontSize: isMobile ? 15 : 18, lineHeight:1.9 }}>
-                    I'm <strong style={{ color:"#fff" }}>Joshua Gashan</strong> — a Data Science graduate with hands-on experience in Machine Learning, NLP, and Big Data analytics, skilled in building predictive models and developing end-to-end web applications. Proficient in Python, SQL, Spark, and ML frameworks, with strong problem-solving and analytical skills, and a solid understanding of statistics and probability theory. Combines technical expertise with creative talents — bringing a unique blend of analytical thinking and creativity to all projects.
+                  <p style={{ color: "#888", fontSize: isMobile ? 15 : 18, lineHeight: 1.9 }}>
+                    I'm <strong style={{ color: "#fff" }}>Joshua Gashan</strong> — a Data Science graduate with hands-on experience in Machine Learning, NLP, and Big Data analytics, skilled in building predictive models and developing end-to-end web applications. Proficient in Python, SQL, Spark, and ML frameworks, with strong problem-solving and analytical skills, and a solid understanding of statistics and probability theory. Combines technical expertise with creative talents — bringing a unique blend of analytical thinking and creativity to all projects.
                   </p>
                 </div>
 
                 {/* Info row — location + languages side by side */}
-                <div style={{ display:"grid", gridTemplateColumns:"1fr 1fr", gap:16 }}>
+                <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 16 }}>
 
                   {/* Location */}
                   <div style={{
-                    background:"linear-gradient(145deg,rgba(255,45,120,0.06),rgba(255,45,120,0.02))",
-                    border:"1px solid rgba(255,45,120,0.15)", borderRadius:16,
-                    padding: isMobile ? "18px" : "22px", position:"relative", overflow:"hidden",
+                    background: "linear-gradient(145deg,rgba(255,45,120,0.06),rgba(255,45,120,0.02))",
+                    border: "1px solid rgba(255,45,120,0.15)", borderRadius: 16,
+                    padding: isMobile ? "18px" : "22px", position: "relative", overflow: "hidden",
                   }}>
-                    <div style={{ position:"absolute", top:0, left:0, right:0, height:2, background:"linear-gradient(90deg,#ff2d78,transparent)" }} />
-                    <div style={{ fontSize:26, marginBottom:10 }}>📍</div>
-                    <p style={{ fontSize:10, letterSpacing:2, textTransform:"uppercase", color:"#ff2d78", marginBottom:6, fontWeight:600 }}>Location</p>
-                    <p style={{ fontSize:16, color:"#fff", fontWeight:700 }}>Colombo</p>
-                    <p style={{ fontSize:14, color:"#555", marginTop:2 }}>Sri Lanka 🇱🇰</p>
+                    <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg,#ff2d78,transparent)" }} />
+                    <div style={{ fontSize: 26, marginBottom: 10 }}>📍</div>
+                    <p style={{ fontSize: 10, letterSpacing: 2, textTransform: "uppercase", color: "#ff2d78", marginBottom: 6, fontWeight: 600 }}>Location</p>
+                    <p style={{ fontSize: 16, color: "#fff", fontWeight: 700 }}>Colombo</p>
+                    <p style={{ fontSize: 14, color: "#555", marginTop: 2 }}>Sri Lanka 🇱🇰</p>
                   </div>
 
                   {/* Languages */}
                   <div style={{
-                    background:"linear-gradient(145deg,rgba(247,183,49,0.06),rgba(247,183,49,0.02))",
-                    border:"1px solid rgba(247,183,49,0.15)", borderRadius:16,
-                    padding: isMobile ? "18px" : "22px", position:"relative", overflow:"hidden",
+                    background: "linear-gradient(145deg,rgba(247,183,49,0.06),rgba(247,183,49,0.02))",
+                    border: "1px solid rgba(247,183,49,0.15)", borderRadius: 16,
+                    padding: isMobile ? "18px" : "22px", position: "relative", overflow: "hidden",
                   }}>
-                    <div style={{ position:"absolute", top:0, left:0, right:0, height:2, background:"linear-gradient(90deg,#f7b731,transparent)" }} />
-                    <div style={{ fontSize:26, marginBottom:10 }}>🌐</div>
-                    <p style={{ fontSize:10, letterSpacing:2, textTransform:"uppercase", color:"#f7b731", marginBottom:8, fontWeight:600 }}>Languages</p>
-                    {[["English","#f7b731"],["Tamil","#f7b73199"],["Sinhala","#f7b73166"]].map(([l,c]) => (
-                      <div key={l} style={{ display:"flex", alignItems:"center", gap:6, marginBottom:4 }}>
-                        <div style={{ width:3, height:3, borderRadius:"50%", background:c }} />
-                        <span style={{ fontSize:14, color:"#888" }}>{l}</span>
+                    <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg,#f7b731,transparent)" }} />
+                    <div style={{ fontSize: 26, marginBottom: 10 }}>🌐</div>
+                    <p style={{ fontSize: 10, letterSpacing: 2, textTransform: "uppercase", color: "#f7b731", marginBottom: 8, fontWeight: 600 }}>Languages</p>
+                    {[["English", "#f7b731"], ["Tamil", "#f7b73199"], ["Sinhala", "#f7b73166"]].map(([l, c]) => (
+                      <div key={l} style={{ display: "flex", alignItems: "center", gap: 6, marginBottom: 4 }}>
+                        <div style={{ width: 3, height: 3, borderRadius: "50%", background: c }} />
+                        <span style={{ fontSize: 14, color: "#888" }}>{l}</span>
                       </div>
                     ))}
                   </div>
@@ -1525,35 +1522,35 @@ function Portfolio() {
               </div>
 
               {/* ── RIGHT COL ── */}
-              <div style={{ display:"flex", flexDirection:"column", gap:16 }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
 
                 {/* Education card */}
                 <div style={{
-                  background:"linear-gradient(135deg,rgba(168,85,247,0.08),rgba(0,245,212,0.04))",
-                  border:"1px solid rgba(168,85,247,0.2)", borderRadius:20,
-                  padding: isMobile ? "22px" : "28px", position:"relative", overflow:"hidden",
+                  background: "linear-gradient(135deg,rgba(168,85,247,0.08),rgba(0,245,212,0.04))",
+                  border: "1px solid rgba(168,85,247,0.2)", borderRadius: 20,
+                  padding: isMobile ? "22px" : "28px", position: "relative", overflow: "hidden",
                 }}>
-                  <div style={{ position:"absolute", top:0, left:0, right:0, height:2, background:"linear-gradient(90deg,#a855f7,#00f5d4,transparent)" }} />
-                  <div style={{ position:"absolute", top:-20, right:-20, fontSize:80, opacity:0.04 }}>🎓</div>
-                  <div style={{ display:"flex", alignItems:"center", gap:10, marginBottom:18 }}>
-                    <div style={{ width:34, height:34, borderRadius:10, background:"linear-gradient(135deg,#a855f7,#7c3aed)", display:"flex", alignItems:"center", justifyContent:"center", fontSize:16, boxShadow:"0 0 16px rgba(168,85,247,0.4)" }}>🎓</div>
+                  <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg,#a855f7,#00f5d4,transparent)" }} />
+                  <div style={{ position: "absolute", top: -20, right: -20, fontSize: 80, opacity: 0.04 }}>🎓</div>
+                  <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 18 }}>
+                    <div style={{ width: 34, height: 34, borderRadius: 10, background: "linear-gradient(135deg,#a855f7,#7c3aed)", display: "flex", alignItems: "center", justifyContent: "center", fontSize: 16, boxShadow: "0 0 16px rgba(168,85,247,0.4)" }}>🎓</div>
                     <div>
-                      <p style={{ fontSize:10, letterSpacing:3, textTransform:"uppercase", color:"#a855f7", fontWeight:600 }}>Education</p>
-                      <p style={{ fontSize:13, color:"#444" }}>2022 — 2025</p>
+                      <p style={{ fontSize: 10, letterSpacing: 3, textTransform: "uppercase", color: "#a855f7", fontWeight: 600 }}>Education</p>
+                      <p style={{ fontSize: 13, color: "#444" }}>2022 — 2025</p>
                     </div>
-                    <div style={{ marginLeft:"auto", display:"flex", alignItems:"center", gap:6, background:"rgba(0,245,212,0.08)", border:"1px solid rgba(0,245,212,0.2)", borderRadius:99, padding:"4px 10px" }}>
-                      <div style={{ width:5, height:5, borderRadius:"50%", background:"#00f5d4", boxShadow:"0 0 6px #00f5d4", animation:"pulse 2s infinite" }} />
-                      <span style={{ fontSize:9, color:"#00f5d4", letterSpacing:2, textTransform:"uppercase" }}>Graduate</span>
+                    <div style={{ marginLeft: "auto", display: "flex", alignItems: "center", gap: 6, background: "rgba(0,245,212,0.08)", border: "1px solid rgba(0,245,212,0.2)", borderRadius: 99, padding: "4px 10px" }}>
+                      <div style={{ width: 5, height: 5, borderRadius: "50%", background: "#00f5d4", boxShadow: "0 0 6px #00f5d4", animation: "pulse 2s infinite" }} />
+                      <span style={{ fontSize: 9, color: "#00f5d4", letterSpacing: 2, textTransform: "uppercase" }}>Graduate</span>
                     </div>
                   </div>
-                  <p style={{ fontSize: isMobile ? 15 : 17, fontWeight:900, color:"#fff", letterSpacing:-0.5, marginBottom:6 }}>BSc (Hons) Data Science</p>
-                  <div style={{ display:"flex", flexDirection:"column", gap:6 }}>
-                    {[{name:"University of Plymouth",loc:"United Kingdom 🇬🇧"},{name:"NSBM Green University",loc:"Sri Lanka 🇱🇰"}].map(u => (
-                      <div key={u.name} style={{ display:"flex", alignItems:"center", gap:8, padding:"8px 12px", borderRadius:10, background:"rgba(255,255,255,0.03)", border:"1px solid rgba(255,255,255,0.06)" }}>
-                        <div style={{ width:4, height:4, borderRadius:"50%", background:"#a855f7", flexShrink:0 }} />
+                  <p style={{ fontSize: isMobile ? 15 : 17, fontWeight: 900, color: "#fff", letterSpacing: -0.5, marginBottom: 6 }}>BSc (Hons) Data Science</p>
+                  <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
+                    {[{ name: "University of Plymouth", loc: "United Kingdom 🇬🇧" }, { name: "NSBM Green University", loc: "Sri Lanka 🇱🇰" }].map(u => (
+                      <div key={u.name} style={{ display: "flex", alignItems: "center", gap: 8, padding: "8px 12px", borderRadius: 10, background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.06)" }}>
+                        <div style={{ width: 4, height: 4, borderRadius: "50%", background: "#a855f7", flexShrink: 0 }} />
                         <div>
-                          <p style={{ fontSize:14, color:"#ccc", fontWeight:600 }}>{u.name}</p>
-                          <p style={{ fontSize:10, color:"#555" }}>{u.loc}</p>
+                          <p style={{ fontSize: 14, color: "#ccc", fontWeight: 600 }}>{u.name}</p>
+                          <p style={{ fontSize: 10, color: "#555" }}>{u.loc}</p>
                         </div>
                       </div>
                     ))}
@@ -1562,26 +1559,26 @@ function Portfolio() {
 
                 {/* Core expertise */}
                 <div style={{
-                  background:"linear-gradient(135deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01))",
-                  border:"1px solid rgba(255,255,255,0.08)", borderRadius:20,
-                  padding: isMobile ? "22px" : "28px", position:"relative", overflow:"hidden",
-                  backdropFilter:"blur(8px)",
+                  background: "linear-gradient(135deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01))",
+                  border: "1px solid rgba(255,255,255,0.08)", borderRadius: 20,
+                  padding: isMobile ? "22px" : "28px", position: "relative", overflow: "hidden",
+                  backdropFilter: "blur(8px)",
                 }}>
-                  <div style={{ position:"absolute", top:0, left:0, right:0, height:2, background:"linear-gradient(90deg,#ff2d78,#a855f7,transparent)" }} />
-                  <p style={{ fontSize:10, letterSpacing:3, textTransform:"uppercase", color:"#a855f7", marginBottom:16, fontWeight:600 }}>Core Expertise</p>
-                  <div style={{ display:"flex", flexWrap:"wrap", gap:8 }}>
+                  <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: "linear-gradient(90deg,#ff2d78,#a855f7,transparent)" }} />
+                  <p style={{ fontSize: 10, letterSpacing: 3, textTransform: "uppercase", color: "#a855f7", marginBottom: 16, fontWeight: 600 }}>Core Expertise</p>
+                  <div style={{ display: "flex", flexWrap: "wrap", gap: 8 }}>
                     {[
-                      {label:"Machine Learning",color:"#00f5d4"},
-                      {label:"NLP",color:"#ff2d78"},
-                      {label:"Big Data",color:"#f7b731"},
-                      {label:"Full-Stack Dev",color:"#a855f7"},
-                      {label:"Flask APIs",color:"#3b82f6"},
-                      {label:"React.js",color:"#00f5d4"},
-                      {label:"Deep Learning",color:"#ff2d78"},
-                      {label:"Apache Spark",color:"#f7b731"},
-                      {label:"Data Viz",color:"#22c55e"},
-                      {label:"Statistics",color:"#a855f7"},
-                    ].map(({label,color}) => (
+                      { label: "Machine Learning", color: "#00f5d4" },
+                      { label: "NLP", color: "#ff2d78" },
+                      { label: "Big Data", color: "#f7b731" },
+                      { label: "Full-Stack Dev", color: "#a855f7" },
+                      { label: "Flask APIs", color: "#3b82f6" },
+                      { label: "React.js", color: "#00f5d4" },
+                      { label: "Deep Learning", color: "#ff2d78" },
+                      { label: "Apache Spark", color: "#f7b731" },
+                      { label: "Data Viz", color: "#22c55e" },
+                      { label: "Statistics", color: "#a855f7" },
+                    ].map(({ label, color }) => (
                       <HoverWord key={label} word={label} color={color} pill={true} />
                     ))}
                   </div>
@@ -1594,7 +1591,7 @@ function Portfolio() {
       </section>
       {/* WHAT I BUILD */}
       <section id="services" style={{ padding: `${section_py} ${px_outer}`, background: "#050510", position: "relative", overflow: "hidden", borderTop: "1px solid #ffffff06" }}>
-        <svg style={{ position:"absolute", width:0, height:0 }}>
+        <svg style={{ position: "absolute", width: 0, height: 0 }}>
           <defs>
             <filter id="liquid-glass" x="-20%" y="-20%" width="140%" height="140%" colorInterpolationFilters="sRGB">
               <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" seed="2" result="noise" />
@@ -1610,7 +1607,7 @@ function Portfolio() {
             <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 16 }}>
               <div style={{ height: 1, width: 40, background: "linear-gradient(90deg,#00f5d4,transparent)" }} />
               <p style={{ fontSize: 13, letterSpacing: 5, textTransform: "uppercase", color: "#00f5d4" }}>Services</p>
-              <div style={{ padding:"4px 12px", borderRadius:99, background:"rgba(255,255,255,0.06)", backdropFilter:"blur(12px)", border:"1px solid rgba(255,255,255,0.12)", fontSize:10, color:"rgba(255,255,255,0.5)", letterSpacing:2 }}></div>
+              <div style={{ padding: "4px 12px", borderRadius: 99, background: "rgba(255,255,255,0.06)", backdropFilter: "blur(12px)", border: "1px solid rgba(255,255,255,0.12)", fontSize: 10, color: "rgba(255,255,255,0.5)", letterSpacing: 2 }}></div>
             </div>
             <h2 style={{ fontSize: isMobile ? "clamp(34px,9vw,50px)" : "clamp(40px,5vw,62px)", fontWeight: 900, letterSpacing: -2.5, lineHeight: 0.95 }}>
               What I <span style={{ background: "linear-gradient(135deg,#00f5d4,#a855f7)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Build</span>
@@ -1641,27 +1638,27 @@ function Portfolio() {
           <div style={{ display: "grid", gridTemplateColumns: isMobile ? "1fr" : isTablet ? "1fr 1fr" : "1fr 1fr 1fr", gap: 16 }}>
             {PROJECTS.map((p, i) => (
               <FadeUp key={p.title} delay={i * 70}>
-                <div className="proj-card" style={{ background: "linear-gradient(145deg,#0d0d1a,#0a0a15)", border: `1px solid ${activeProject===i ? p.color+"55" : "#ffffff08"}`, borderRadius: 14, padding: isMobile ? "22px" : "28px", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", cursor: "pointer" }}
+                <div className="proj-card" style={{ background: "linear-gradient(145deg,#0d0d1a,#0a0a15)", border: `1px solid ${activeProject === i ? p.color + "55" : "#ffffff08"}`, borderRadius: 14, padding: isMobile ? "22px" : "28px", position: "relative", overflow: "hidden", display: "flex", flexDirection: "column", cursor: "pointer" }}
                   onMouseEnter={() => setActiveProject(i)} onMouseLeave={() => setActiveProject(null)}>
-                  <div style={{ position: "absolute", inset: 0, background: `radial-gradient(circle at 50% 0%, ${p.color}08, transparent 60%)`, opacity: activeProject===i ? 1 : 0, transition: "opacity 0.3s", pointerEvents: "none" }} />
+                  <div style={{ position: "absolute", inset: 0, background: `radial-gradient(circle at 50% 0%, ${p.color}08, transparent 60%)`, opacity: activeProject === i ? 1 : 0, transition: "opacity 0.3s", pointerEvents: "none" }} />
                   <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 2, background: `linear-gradient(90deg,${p.color},transparent)` }} />
-                  <div style={{ position: "absolute", top: 16, right: 16, fontSize: 10, letterSpacing: 2, color: p.color + "66", fontWeight: 800 }}>0{i+1}</div>
+                  <div style={{ position: "absolute", top: 16, right: 16, fontSize: 10, letterSpacing: 2, color: p.color + "66", fontWeight: 800 }}>0{i + 1}</div>
                   <p style={{ fontSize: 12, color: p.color, letterSpacing: 2, textTransform: "uppercase", marginBottom: 8, fontWeight: 600 }}>{p.sub}</p>
                   <h3 style={{ fontWeight: 900, fontSize: isMobile ? 20 : 24, marginBottom: 10, letterSpacing: -0.5, color: "#fff" }}>{p.title}</h3>
                   <p style={{ color: "#666", fontSize: 16, lineHeight: 1.8, marginBottom: 18, flex: 1 }}>{p.desc}</p>
                   <div style={{ display: "flex", flexWrap: "wrap", gap: 6, marginBottom: 18 }}>
-                    {p.tags.map(t => <span key={t} style={{ padding: "4px 10px", fontSize: 11, letterSpacing: 1, textTransform: "uppercase", borderRadius: 4, background: p.color+"12", color: p.color, border: `1px solid ${p.color}25` }}>{t}</span>)}
+                    {p.tags.map(t => <span key={t} style={{ padding: "4px 10px", fontSize: 11, letterSpacing: 1, textTransform: "uppercase", borderRadius: 4, background: p.color + "12", color: p.color, border: `1px solid ${p.color}25` }}>{t}</span>)}
                   </div>
                   <div style={{ paddingTop: 16, borderTop: "1px solid #ffffff06", display: "flex", alignItems: "center", justifyContent: "space-between", position: "relative", zIndex: 10 }}>
                     <a href={p.github} target="_blank" rel="noopener noreferrer"
                       onClick={e => e.stopPropagation()}
                       style={{ display: "inline-flex", alignItems: "center", gap: 8, fontSize: 12, letterSpacing: 2, textTransform: "uppercase", color: "#444", textDecoration: "none", transition: "color 0.2s", position: "relative", zIndex: 10, WebkitTapHighlightColor: "transparent", padding: "8px 0" }}
-                      onMouseEnter={e => e.currentTarget.style.color=p.color} onMouseLeave={e => e.currentTarget.style.color="#444"}>
-                      <GitHubIcon /> View on GitHub <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M7 17L17 7M7 7h10v10"/></svg>
+                      onMouseEnter={e => e.currentTarget.style.color = p.color} onMouseLeave={e => e.currentTarget.style.color = "#444"}>
+                      <GitHubIcon /> View on GitHub <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M7 17L17 7M7 7h10v10" /></svg>
                     </a>
                     <span style={{ fontSize: 10, color: "#2a2a2a", cursor: "pointer", letterSpacing: 0.5, transition: "color 0.2s" }}
                       onClick={() => navigator.clipboard?.writeText(p.github)}
-                      onMouseEnter={e => e.currentTarget.style.color="#555"} onMouseLeave={e => e.currentTarget.style.color="#2a2a2a"}>
+                      onMouseEnter={e => e.currentTarget.style.color = "#555"} onMouseLeave={e => e.currentTarget.style.color = "#2a2a2a"}>
                       copy link
                     </span>
                   </div>
@@ -1673,23 +1670,23 @@ function Portfolio() {
       </section>
 
       {/* CODE WINDOW SECTION */}
-      <section id="skills" style={{ padding: `${section_py} ${px_outer}`, position:"relative", overflow:"hidden", borderTop:"1px solid #ffffff06" }}>
-        <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse 60% 50% at 50% 50%, rgba(168,85,247,0.06), transparent)", pointerEvents:"none" }} />
-        <div style={{ maxWidth: maxW, margin:"0 auto", position:"relative", zIndex:2 }}>
-          <FadeUp style={{ marginBottom: isMobile ? 28 : 40, textAlign:"center" }}>
-            <div style={{ display:"flex", alignItems:"center", gap:16, marginBottom:12, justifyContent:"center" }}>
-              <div style={{ height:1, width:40, background:"linear-gradient(90deg,transparent,#a855f7)" }} />
-              <p style={{ fontSize:14, letterSpacing:5, textTransform:"uppercase", color:"#a855f7" }}>In Action</p>
-              <div style={{ height:1, width:40, background:"linear-gradient(90deg,#a855f7,transparent)" }} />
+      <section id="skills" style={{ padding: `${section_py} ${px_outer}`, position: "relative", overflow: "hidden", borderTop: "1px solid #ffffff06" }}>
+        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 60% 50% at 50% 50%, rgba(168,85,247,0.06), transparent)", pointerEvents: "none" }} />
+        <div style={{ maxWidth: maxW, margin: "0 auto", position: "relative", zIndex: 2 }}>
+          <FadeUp style={{ marginBottom: isMobile ? 28 : 40, textAlign: "center" }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 12, justifyContent: "center" }}>
+              <div style={{ height: 1, width: 40, background: "linear-gradient(90deg,transparent,#a855f7)" }} />
+              <p style={{ fontSize: 14, letterSpacing: 5, textTransform: "uppercase", color: "#a855f7" }}>In Action</p>
+              <div style={{ height: 1, width: 40, background: "linear-gradient(90deg,#a855f7,transparent)" }} />
             </div>
-            <h2 style={{ fontSize: isMobile ? "clamp(34px,9vw,50px)" : "clamp(40px,5vw,62px)", fontWeight:900, letterSpacing:-2, color:"#fff" }}>
-              Building with <span style={{ background:"linear-gradient(135deg,#00f5d4,#a855f7)", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent" }}>Code</span>
+            <h2 style={{ fontSize: isMobile ? "clamp(34px,9vw,50px)" : "clamp(40px,5vw,62px)", fontWeight: 900, letterSpacing: -2, color: "#fff" }}>
+              Building with <span style={{ background: "linear-gradient(135deg,#00f5d4,#a855f7)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Code</span>
             </h2>
           </FadeUp>
           <FadeUp delay={150}>
-            <div style={{ 
-              maxWidth: isMobile ? "100%" : isTablet ? 560 : 700, 
-              margin:"0 auto",
+            <div style={{
+              maxWidth: isMobile ? "100%" : isTablet ? 560 : 700,
+              margin: "0 auto",
               transform: isMobile ? "none" : "perspective(1200px) rotateX(2deg)",
               transition: "transform 0.3s",
             }}>
@@ -1702,41 +1699,41 @@ function Portfolio() {
 
       {/* SKILLS */}
       {/* FOOTER */}
-      <section id="contact" style={{ padding: `${section_py} ${px_outer} ${isMobile ? "60px" : "80px"}`, position:"relative", overflow:"hidden", textAlign:"center", position:"relative", overflow:"hidden", borderTop:"1px solid #ffffff06" }}>
-        <div style={{ position:"absolute", inset:0, background:"radial-gradient(ellipse 60% 60% at 50% 50%,#00f5d406,transparent)", pointerEvents:"none" }} />
-        <FadeUp style={{ position:"relative", zIndex:1 }}>
-          <p style={{ fontSize:14, letterSpacing:5, textTransform:"uppercase", color:"#00f5d4", marginBottom:20 }}>Contact</p>
-          <h2 style={{ fontSize: isMobile ? "clamp(34px,11vw,58px)" : "clamp(58px,9vw,108px)", fontWeight:900, letterSpacing:-2, marginBottom:16, lineHeight:1 }}>
+      <section id="contact" style={{ padding: `${section_py} ${px_outer} ${isMobile ? "60px" : "80px"}`, position: "relative", overflow: "hidden", textAlign: "center", position: "relative", overflow: "hidden", borderTop: "1px solid #ffffff06" }}>
+        <div style={{ position: "absolute", inset: 0, background: "radial-gradient(ellipse 60% 60% at 50% 50%,#00f5d406,transparent)", pointerEvents: "none" }} />
+        <FadeUp style={{ position: "relative", zIndex: 1 }}>
+          <p style={{ fontSize: 14, letterSpacing: 5, textTransform: "uppercase", color: "#00f5d4", marginBottom: 20 }}>Contact</p>
+          <h2 style={{ fontSize: isMobile ? "clamp(34px,11vw,58px)" : "clamp(58px,9vw,108px)", fontWeight: 900, letterSpacing: -2, marginBottom: 16, lineHeight: 1 }}>
             Let's Build<br />
-            <span style={{ background:"linear-gradient(135deg,#00f5d4,#a855f7,#ff2d78)", backgroundSize:"200% auto", WebkitBackgroundClip:"text", WebkitTextFillColor:"transparent", animation:"shimmer 4s linear infinite" }}>Something.</span>
+            <span style={{ background: "linear-gradient(135deg,#00f5d4,#a855f7,#ff2d78)", backgroundSize: "200% auto", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", animation: "shimmer 4s linear infinite" }}>Something.</span>
           </h2>
-          <p style={{ color:"#555", fontSize: isMobile ? 16 : 18, marginBottom:40, maxWidth:400, margin:"0 auto 40px" }}>Open to Data Science, ML Engineering & Full-Stack opportunities.</p>
-          <div style={{ display:"flex", flexDirection:"column", alignItems:"center", gap:12, marginBottom:40 }}>
-            <div style={{ display:"flex", gap:10, flexWrap:"wrap", justifyContent:"center", width:"100%" }}>
+          <p style={{ color: "#555", fontSize: isMobile ? 16 : 18, marginBottom: 40, maxWidth: 400, margin: "0 auto 40px" }}>Open to Data Science, ML Engineering & Full-Stack opportunities.</p>
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 12, marginBottom: 40 }}>
+            <div style={{ display: "flex", gap: 10, flexWrap: "wrap", justifyContent: "center", width: "100%" }}>
               {/* Gmail */}
-              <a href="mailto:Joshuagashan@gmail.com" style={{ padding:"16px 26px", background:"linear-gradient(135deg,#00f5d4,#00c4a9)", color:"#070710", fontWeight:700, fontSize:10, letterSpacing:1.5, textTransform:"uppercase", borderRadius:6, display:"inline-flex", alignItems:"center", gap:8, justifyContent:"center", boxShadow:"0 0 20px #00f5d433", textDecoration:"none", flex: isMobile ? "1 1 40%" : "0 0 auto" }}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:Joshuagashan@gmail.com" style={{ padding: "16px 26px", background: "linear-gradient(135deg,#00f5d4,#00c4a9)", color: "#070710", fontWeight: 700, fontSize: 10, letterSpacing: 1.5, textTransform: "uppercase", borderRadius: 6, display: "inline-flex", alignItems: "center", gap: 8, justifyContent: "center", boxShadow: "0 0 20px #00f5d433", textDecoration: "none", flex: isMobile ? "1 1 40%" : "0 0 auto" }}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22,6 12,13 2,6" /></svg>
                 Gmail
               </a>
               {/* WhatsApp */}
               <a href="https://wa.me/94767159028?text=Hi%20Joshua!" target="_blank" rel="noopener noreferrer"
-                style={{ padding:"16px 26px", background:"linear-gradient(135deg,rgba(37,211,102,0.15),rgba(37,211,102,0.06))", color:"#25d366", fontWeight:700, fontSize:10, letterSpacing:1.5, textTransform:"uppercase", borderRadius:6, display:"inline-flex", alignItems:"center", gap:8, border:"1px solid rgba(37,211,102,0.28)", justifyContent:"center", boxShadow:"0 0 16px rgba(37,211,102,0.12)", textDecoration:"none", flex: isMobile ? "1 1 40%" : "0 0 auto", transition:"all 0.2s" }}
-                onMouseEnter={e=>{e.currentTarget.style.boxShadow="0 0 24px rgba(37,211,102,0.28)";}}
-                onMouseLeave={e=>{e.currentTarget.style.boxShadow="0 0 16px rgba(37,211,102,0.12)";}}>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                style={{ padding: "16px 26px", background: "linear-gradient(135deg,rgba(37,211,102,0.15),rgba(37,211,102,0.06))", color: "#25d366", fontWeight: 700, fontSize: 10, letterSpacing: 1.5, textTransform: "uppercase", borderRadius: 6, display: "inline-flex", alignItems: "center", gap: 8, border: "1px solid rgba(37,211,102,0.28)", justifyContent: "center", boxShadow: "0 0 16px rgba(37,211,102,0.12)", textDecoration: "none", flex: isMobile ? "1 1 40%" : "0 0 auto", transition: "all 0.2s" }}
+                onMouseEnter={e => { e.currentTarget.style.boxShadow = "0 0 24px rgba(37,211,102,0.28)"; }}
+                onMouseLeave={e => { e.currentTarget.style.boxShadow = "0 0 16px rgba(37,211,102,0.12)"; }}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" /></svg>
                 WhatsApp
               </a>
               {/* GitHub */}
-              <a href="https://github.com/JoshuaGashan" target="_blank" rel="noopener noreferrer" style={{ padding:"12px 20px", background:"linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))", color:"#e6edf3", fontWeight:700, fontSize:10, letterSpacing:1.5, textTransform:"uppercase", borderRadius:6, display:"inline-flex", alignItems:"center", gap:8, border:"1px solid rgba(255,255,255,0.12)", justifyContent:"center", boxShadow:"0 0 16px rgba(255,255,255,0.04)", textDecoration:"none", flex: isMobile ? "1 1 40%" : "0 0 auto", transition:"all 0.2s" }}
-                onMouseEnter={e=>{e.currentTarget.style.borderColor="rgba(255,255,255,0.25)"; e.currentTarget.style.background="rgba(255,255,255,0.1)";}}
-                onMouseLeave={e=>{e.currentTarget.style.borderColor="rgba(255,255,255,0.12)"; e.currentTarget.style.background="linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))";}}>
+              <a href="https://github.com/JoshuaGashan" target="_blank" rel="noopener noreferrer" style={{ padding: "12px 20px", background: "linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))", color: "#e6edf3", fontWeight: 700, fontSize: 10, letterSpacing: 1.5, textTransform: "uppercase", borderRadius: 6, display: "inline-flex", alignItems: "center", gap: 8, border: "1px solid rgba(255,255,255,0.12)", justifyContent: "center", boxShadow: "0 0 16px rgba(255,255,255,0.04)", textDecoration: "none", flex: isMobile ? "1 1 40%" : "0 0 auto", transition: "all 0.2s" }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.25)"; e.currentTarget.style.background = "rgba(255,255,255,0.1)"; }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = "rgba(255,255,255,0.12)"; e.currentTarget.style.background = "linear-gradient(135deg,rgba(255,255,255,0.08),rgba(255,255,255,0.03))"; }}>
                 <GitHubIcon size={14} />
                 GitHub
               </a>
               {/* LinkedIn */}
-              <a href="https://linkedin.com/in/joshuagashan" target="_blank" rel="noopener noreferrer" style={{ padding:"12px 20px", background:"linear-gradient(135deg,rgba(10,102,194,0.18),rgba(10,102,194,0.08))", color:"#0a66c2", fontWeight:700, fontSize:10, letterSpacing:1.5, textTransform:"uppercase", borderRadius:6, display:"inline-flex", alignItems:"center", gap:8, border:"1px solid rgba(10,102,194,0.3)", justifyContent:"center", boxShadow:"0 0 16px rgba(10,102,194,0.12)", textDecoration:"none", flex: isMobile ? "1 1 40%" : "0 0 auto", transition:"all 0.2s" }}
-                onMouseEnter={e=>{e.currentTarget.style.boxShadow="0 0 24px rgba(10,102,194,0.28)"; e.currentTarget.style.background="linear-gradient(135deg,rgba(10,102,194,0.28),rgba(10,102,194,0.15))";}}
-                onMouseLeave={e=>{e.currentTarget.style.boxShadow="0 0 16px rgba(10,102,194,0.12)"; e.currentTarget.style.background="linear-gradient(135deg,rgba(10,102,194,0.18),rgba(10,102,194,0.08))";}}>
+              <a href="https://linkedin.com/in/joshuagashan" target="_blank" rel="noopener noreferrer" style={{ padding: "12px 20px", background: "linear-gradient(135deg,rgba(10,102,194,0.18),rgba(10,102,194,0.08))", color: "#0a66c2", fontWeight: 700, fontSize: 10, letterSpacing: 1.5, textTransform: "uppercase", borderRadius: 6, display: "inline-flex", alignItems: "center", gap: 8, border: "1px solid rgba(10,102,194,0.3)", justifyContent: "center", boxShadow: "0 0 16px rgba(10,102,194,0.12)", textDecoration: "none", flex: isMobile ? "1 1 40%" : "0 0 auto", transition: "all 0.2s" }}
+                onMouseEnter={e => { e.currentTarget.style.boxShadow = "0 0 24px rgba(10,102,194,0.28)"; e.currentTarget.style.background = "linear-gradient(135deg,rgba(10,102,194,0.28),rgba(10,102,194,0.15))"; }}
+                onMouseLeave={e => { e.currentTarget.style.boxShadow = "0 0 16px rgba(10,102,194,0.12)"; e.currentTarget.style.background = "linear-gradient(135deg,rgba(10,102,194,0.18),rgba(10,102,194,0.08))"; }}>
                 <SocialIcon k="li" size={14} />
                 LinkedIn
               </a>
@@ -1747,21 +1744,21 @@ function Portfolio() {
               @keyframes iconBob2{0%,100%{transform:translateY(-5px)}50%{transform:translateY(3px)}}
               @keyframes iconBob3{0%,100%{transform:translateY(2px)}50%{transform:translateY(-6px)}}
             `}</style>
-            <div style={{ display:"flex", gap:14, justifyContent:"center" }}>
+            <div style={{ display: "flex", gap: 14, justifyContent: "center" }}>
               {SOCIAL.map((s, i) => (
                 <a key={s.key} href={s.url} target="_blank" rel="noopener noreferrer"
                   style={{
-                    width:48, height:48, borderRadius:12,
-                    border:"1px solid rgba(0,245,212,0.25)",
-                    display:"flex", alignItems:"center", justifyContent:"center",
-                    color:"rgba(0,245,212,0.7)", transition:"all 0.3s",
-                    background:"rgba(0,10,30,0.6)",
-                    backdropFilter:"blur(10px)",
-                    boxShadow:"0 4px 16px rgba(0,245,212,0.1)",
-                    animation:`iconBob${i} ${[3.2,2.8,3.5,3.0][i]}s ${[0,0.6,1.2,0.3][i]}s ease-in-out infinite`,
+                    width: 48, height: 48, borderRadius: 12,
+                    border: "1px solid rgba(0,245,212,0.25)",
+                    display: "flex", alignItems: "center", justifyContent: "center",
+                    color: "rgba(0,245,212,0.7)", transition: "all 0.3s",
+                    background: "rgba(0,10,30,0.6)",
+                    backdropFilter: "blur(10px)",
+                    boxShadow: "0 4px 16px rgba(0,245,212,0.1)",
+                    animation: `iconBob${i} ${[3.2, 2.8, 3.5, 3.0][i]}s ${[0, 0.6, 1.2, 0.3][i]}s ease-in-out infinite`,
                   }}
-                  onMouseEnter={e => { e.currentTarget.style.color="#00f5d4"; e.currentTarget.style.borderColor="rgba(0,245,212,0.7)"; e.currentTarget.style.boxShadow="0 6px 24px rgba(0,245,212,0.3)"; e.currentTarget.style.transform="scale(1.15)"; }}
-                  onMouseLeave={e => { e.currentTarget.style.color="rgba(0,245,212,0.7)"; e.currentTarget.style.borderColor="rgba(0,245,212,0.25)"; e.currentTarget.style.boxShadow="0 4px 16px rgba(0,245,212,0.1)"; e.currentTarget.style.transform=""; }}>
+                  onMouseEnter={e => { e.currentTarget.style.color = "#00f5d4"; e.currentTarget.style.borderColor = "rgba(0,245,212,0.7)"; e.currentTarget.style.boxShadow = "0 6px 24px rgba(0,245,212,0.3)"; e.currentTarget.style.transform = "scale(1.15)"; }}
+                  onMouseLeave={e => { e.currentTarget.style.color = "rgba(0,245,212,0.7)"; e.currentTarget.style.borderColor = "rgba(0,245,212,0.25)"; e.currentTarget.style.boxShadow = "0 4px 16px rgba(0,245,212,0.1)"; e.currentTarget.style.transform = ""; }}>
                   <SocialIcon k={s.key} size={19} />
                 </a>
               ))}
@@ -1772,14 +1769,14 @@ function Portfolio() {
 
         {/* Ocean Wave — absolute background at bottom of contact */}
         <div style={{
-          position:"absolute", bottom:0, left:0, right:0,
-          height:"100%",
-          pointerEvents:"auto",
-          zIndex:0,
+          position: "absolute", bottom: 0, left: 0, right: 0,
+          height: "100%",
+          pointerEvents: "auto",
+          zIndex: 0,
         }}>
           <OceanWave />
-          <div style={{ position:"absolute", bottom:20, left:0, right:0, textAlign:"center", zIndex:10, pointerEvents:"none" }}>
-            <p style={{ fontSize:13, color:"rgba(0,245,212,0.5)", letterSpacing:1, lineHeight:1.8 }}>
+          <div style={{ position: "absolute", bottom: 20, left: 0, right: 0, textAlign: "center", zIndex: 10, pointerEvents: "none" }}>
+            <p style={{ fontSize: 13, color: "rgba(0,245,212,0.5)", letterSpacing: 1, lineHeight: 1.8 }}>
               © {new Date().getFullYear()} Joshua Gashan. All rights reserved.
             </p>
           </div>
@@ -1810,16 +1807,16 @@ function OceanWave() {
         vx: dir * (4 + Math.random() * 4),
         gravity: 0.10,
         size: 8 + Math.random() * 55,
-        color: `hsl(${160 + Math.random()*80},90%,${55+Math.random()*20}%)`,
+        color: `hsl(${160 + Math.random() * 80},90%,${55 + Math.random() * 20}%)`,
         alive: true,
         splash: [],
       });
-      const last = fish[fish.length-1];
+      const last = fish[fish.length - 1];
       for (let i = 0; i < 8; i++) {
         last.splash.push({
           x: last.x, y: clickY || H * 0.91,
-          vx: (Math.random()-0.5)*5,
-          vy: -(2+Math.random()*5),
+          vx: (Math.random() - 0.5) * 5,
+          vy: -(2 + Math.random() * 5),
           life: 1,
         });
       }
@@ -1932,31 +1929,31 @@ function OceanWave() {
       bg.addColorStop(1, "rgba(2,13,32,1)");
       ctx.fillStyle = bg;
       ctx.fillRect(0, 0, W, H);
-      const uwGlow = ctx.createRadialGradient(W*0.5, H, 0, W*0.5, H, W*0.6);
+      const uwGlow = ctx.createRadialGradient(W * 0.5, H, 0, W * 0.5, H, W * 0.6);
       uwGlow.addColorStop(0, "rgba(0,100,160,0.25)");
       uwGlow.addColorStop(1, "rgba(0,0,0,0)");
       ctx.fillStyle = uwGlow;
       ctx.fillRect(0, 0, W, H);
 
-      drawWave(H*0.65, 14, 0.30, 0.0,  12, 0.005, 0.50, "rgba(0,60,120,0.7)",  "rgba(0,10,40,0)", 0.5);
-      drawWave(H*0.87, 16, 0.35, 1.1,  14, 0.006, 0.55, "rgba(0,80,150,0.65)", "rgba(0,8,35,0)",  0.55);
-      drawWave(H*0.74, 18, 0.40, 2.3,  13, 0.007, 0.65, "rgba(0,100,170,0.6)", "rgba(0,6,30,0)",  0.6);
-      drawWave(H*0.83, 20, 0.45, 0.7,  15, 0.008, 0.75, "rgba(0,130,190,0.55)","rgba(0,4,25,0)",  0.65);
-      drawWave(H*0.79, 22, 0.50, 3.5,  14, 0.009, 0.85, "rgba(0,160,205,0.5)", "rgba(0,3,20,0)",  0.7);
-      drawWave(H*0.83, 24, 0.55, 1.8,  13, 0.010, 0.95, "rgba(0,190,215,0.5)", "rgba(0,2,18,0)",  0.75);
-      drawWave(H*0.87, 26, 0.60, 4.2,  11, 0.012, 1.10, "rgba(0,215,225,0.45)","rgba(0,1,15,0)",  0.80);
-      drawWave(H*0.91, 28, 0.65, 2.9,  10, 0.014, 1.25, "rgba(0,240,220,0.5)", "rgba(0,245,212,0)",0.85);
-      drawFoam(H*0.87, 26, 0.60, 4.2, 11, 0.012, 1.10, 0.25);
-      drawFoam(H*0.91, 28, 0.65, 2.9, 10, 0.014, 1.25, 0.35);
+      drawWave(H * 0.65, 14, 0.30, 0.0, 12, 0.005, 0.50, "rgba(0,60,120,0.7)", "rgba(0,10,40,0)", 0.5);
+      drawWave(H * 0.87, 16, 0.35, 1.1, 14, 0.006, 0.55, "rgba(0,80,150,0.65)", "rgba(0,8,35,0)", 0.55);
+      drawWave(H * 0.74, 18, 0.40, 2.3, 13, 0.007, 0.65, "rgba(0,100,170,0.6)", "rgba(0,6,30,0)", 0.6);
+      drawWave(H * 0.83, 20, 0.45, 0.7, 15, 0.008, 0.75, "rgba(0,130,190,0.55)", "rgba(0,4,25,0)", 0.65);
+      drawWave(H * 0.79, 22, 0.50, 3.5, 14, 0.009, 0.85, "rgba(0,160,205,0.5)", "rgba(0,3,20,0)", 0.7);
+      drawWave(H * 0.83, 24, 0.55, 1.8, 13, 0.010, 0.95, "rgba(0,190,215,0.5)", "rgba(0,2,18,0)", 0.75);
+      drawWave(H * 0.87, 26, 0.60, 4.2, 11, 0.012, 1.10, "rgba(0,215,225,0.45)", "rgba(0,1,15,0)", 0.80);
+      drawWave(H * 0.91, 28, 0.65, 2.9, 10, 0.014, 1.25, "rgba(0,240,220,0.5)", "rgba(0,245,212,0)", 0.85);
+      drawFoam(H * 0.87, 26, 0.60, 4.2, 11, 0.012, 1.10, 0.25);
+      drawFoam(H * 0.91, 28, 0.65, 2.9, 10, 0.014, 1.25, 0.35);
 
       for (let i = 0; i < 5; i++) {
-        const sy = H*(0.65 + i*0.06) + Math.sin(t*0.5 + i*1.1)*8;
+        const sy = H * (0.65 + i * 0.06) + Math.sin(t * 0.5 + i * 1.1) * 8;
         ctx.beginPath();
         for (let x = 0; x <= W; x += 4) {
-          const y = sy + Math.sin(x*0.025 + t*1.3 + i*1.5)*3;
+          const y = sy + Math.sin(x * 0.025 + t * 1.3 + i * 1.5) * 3;
           x === 0 ? ctx.moveTo(x, y) : ctx.lineTo(x, y);
         }
-        ctx.strokeStyle = `rgba(0,245,212,${0.03+i*0.012})`;
+        ctx.strokeStyle = `rgba(0,245,212,${0.03 + i * 0.012})`;
         ctx.lineWidth = 0.7;
         ctx.stroke();
       }
@@ -1995,7 +1992,7 @@ function OceanWave() {
     return () => { cancelAnimationFrame(raf); window.removeEventListener("resize", resize); };
   }, []);
 
-  return <canvas ref={canvasRef} style={{ width:"100%", height:"100%", display:"block", cursor:"pointer" }}/>;
+  return <canvas ref={canvasRef} style={{ width: "100%", height: "100%", display: "block", cursor: "pointer" }} />;
 }
 
 function HeroCanvas() {
@@ -2014,34 +2011,34 @@ function HeroCanvas() {
 
     function getVerts(R) {
       return [
-        [-1,phi,0],[1,phi,0],[-1,-phi,0],[1,-phi,0],
-        [0,-1,phi],[0,1,phi],[0,-1,-phi],[0,1,-phi],
-        [phi,0,-1],[phi,0,1],[-phi,0,-1],[-phi,0,1]
-      ].map(([x,y,z]) => {
-        const len = Math.sqrt(x*x+y*y+z*z);
-        return {x:x/len*R, y:y/len*R, z:z/len*R};
+        [-1, phi, 0], [1, phi, 0], [-1, -phi, 0], [1, -phi, 0],
+        [0, -1, phi], [0, 1, phi], [0, -1, -phi], [0, 1, -phi],
+        [phi, 0, -1], [phi, 0, 1], [-phi, 0, -1], [-phi, 0, 1]
+      ].map(([x, y, z]) => {
+        const len = Math.sqrt(x * x + y * y + z * z);
+        return { x: x / len * R, y: y / len * R, z: z / len * R };
       });
     }
 
     const icoEdges = [
-      [0,1],[0,5],[0,7],[0,10],[0,11],
-      [1,5],[1,7],[1,8],[1,9],
-      [2,3],[2,6],[2,10],[2,11],[2,4],
-      [3,4],[3,6],[3,8],[3,9],
-      [4,5],[4,9],[4,11],
-      [5,9],[5,11],
-      [6,7],[6,8],[6,10],
-      [7,8],[7,10],[8,9],[10,11]
+      [0, 1], [0, 5], [0, 7], [0, 10], [0, 11],
+      [1, 5], [1, 7], [1, 8], [1, 9],
+      [2, 3], [2, 6], [2, 10], [2, 11], [2, 4],
+      [3, 4], [3, 6], [3, 8], [3, 9],
+      [4, 5], [4, 9], [4, 11],
+      [5, 9], [5, 11],
+      [6, 7], [6, 8], [6, 10],
+      [7, 8], [7, 10], [8, 9], [10, 11]
     ];
 
     function getOctVerts(R2) {
       return [
-        {x:R2,y:0,z:0},{x:-R2,y:0,z:0},
-        {x:0,y:R2,z:0},{x:0,y:-R2,z:0},
-        {x:0,y:0,z:R2},{x:0,y:0,z:-R2}
+        { x: R2, y: 0, z: 0 }, { x: -R2, y: 0, z: 0 },
+        { x: 0, y: R2, z: 0 }, { x: 0, y: -R2, z: 0 },
+        { x: 0, y: 0, z: R2 }, { x: 0, y: 0, z: -R2 }
       ];
     }
-    const octEdges = [[0,2],[0,3],[0,4],[0,5],[1,2],[1,3],[1,4],[1,5],[2,4],[2,5],[3,4],[3,5]];
+    const octEdges = [[0, 2], [0, 3], [0, 4], [0, 5], [1, 2], [1, 3], [1, 4], [1, 5], [2, 4], [2, 5], [3, 4], [3, 5]];
 
     let particles = [];
 
@@ -2052,30 +2049,30 @@ function HeroCanvas() {
       canvas.width = W;
       canvas.height = H;
       const R = Math.min(W, H) * (W < 768 ? 0.22 : 0.28);
-      particles = Array.from({length:100}, () => {
+      particles = Array.from({ length: 100 }, () => {
         const r = R * (1.4 + Math.random() * 0.8);
         const th = Math.random() * Math.PI * 2;
         const ph = Math.acos(2 * Math.random() - 1);
         return {
-          x: r*Math.sin(ph)*Math.cos(th), y: r*Math.sin(ph)*Math.sin(th), z: r*Math.cos(ph),
+          x: r * Math.sin(ph) * Math.cos(th), y: r * Math.sin(ph) * Math.sin(th), z: r * Math.cos(ph),
           size: 0.5 + Math.random() * 1.5,
-          col: ["#00f5d4","#a855f7","#ff2d78"][Math.floor(Math.random()*3)],
+          col: ["#00f5d4", "#a855f7", "#ff2d78"][Math.floor(Math.random() * 3)],
         };
       });
     }
 
-    function rot(x,y,z,rx,ry) {
-      let x1 = x*Math.cos(ry) - z*Math.sin(ry);
-      let z1 = x*Math.sin(ry) + z*Math.cos(ry);
-      let y2 = y*Math.cos(rx) - z1*Math.sin(rx);
-      let z2 = y*Math.sin(rx) + z1*Math.cos(rx);
-      return {x:x1, y:y2, z:z2};
+    function rot(x, y, z, rx, ry) {
+      let x1 = x * Math.cos(ry) - z * Math.sin(ry);
+      let z1 = x * Math.sin(ry) + z * Math.cos(ry);
+      let y2 = y * Math.cos(rx) - z1 * Math.sin(rx);
+      let z2 = y * Math.sin(rx) + z1 * Math.cos(rx);
+      return { x: x1, y: y2, z: z2 };
     }
 
-    function proj(x,y,z) {
-      const fov = 500, cx = W/2, cy = H/2;
+    function proj(x, y, z) {
+      const fov = 500, cx = W / 2, cy = H / 2;
       const s = Math.max(0.001, fov / (fov + z));
-      return {x: cx + x*s, y: cy + y*s, s};
+      return { x: cx + x * s, y: cy + y * s, s };
     }
 
     function draw() {
@@ -2098,10 +2095,10 @@ function HeroCanvas() {
 
       // Particles
       particles.forEach(p => {
-        const r = rot(p.x, p.y, p.z, rotX*0.15, rotY*0.15);
+        const r = rot(p.x, p.y, p.z, rotX * 0.15, rotY * 0.15);
         const pr = proj(r.x, r.y, r.z);
         ctx.beginPath();
-        ctx.arc(pr.x, pr.y, Math.max(0, p.size * pr.s), 0, Math.PI*2);
+        ctx.arc(pr.x, pr.y, Math.max(0, p.size * pr.s), 0, Math.PI * 2);
         ctx.fillStyle = p.col;
         ctx.globalAlpha = 0.5 * Math.max(0.1, pr.s);
         ctx.fill();
@@ -2110,12 +2107,12 @@ function HeroCanvas() {
       ctx.globalAlpha = 1;
 
       // Icosahedron
-      icoEdges.forEach(([a,b]) => {
+      icoEdges.forEach(([a, b]) => {
         const ra = rot(verts[a].x, verts[a].y, verts[a].z, rotX, rotY);
         const rb = rot(verts[b].x, verts[b].y, verts[b].z, rotX, rotY);
         const pa = proj(ra.x, ra.y, ra.z);
         const pb = proj(rb.x, rb.y, rb.z);
-        const alpha = 0.08 + ((ra.z + rb.z) / (2*R) + 1) * 0.15;
+        const alpha = 0.08 + ((ra.z + rb.z) / (2 * R) + 1) * 0.15;
         ctx.beginPath();
         ctx.moveTo(pa.x, pa.y);
         ctx.lineTo(pb.x, pb.y);
@@ -2125,9 +2122,9 @@ function HeroCanvas() {
       });
 
       // Octahedron
-      octEdges.forEach(([a,b]) => {
-        const ra = rot(oVerts[a].x, oVerts[a].y, oVerts[a].z, rotX*1.6, rotY*1.4);
-        const rb = rot(oVerts[b].x, oVerts[b].y, oVerts[b].z, rotX*1.6, rotY*1.4);
+      octEdges.forEach(([a, b]) => {
+        const ra = rot(oVerts[a].x, oVerts[a].y, oVerts[a].z, rotX * 1.6, rotY * 1.4);
+        const rb = rot(oVerts[b].x, oVerts[b].y, oVerts[b].z, rotX * 1.6, rotY * 1.4);
         const pa = proj(ra.x, ra.y, ra.z);
         const pb = proj(rb.x, rb.y, rb.z);
         ctx.beginPath();
@@ -2141,15 +2138,15 @@ function HeroCanvas() {
       // Sphere rings
       for (let ring = 0; ring < 6; ring++) {
         const ringR = R * 1.35;
-        const ringY = -ringR + ring * (ringR*2/5);
-        const ringRad = Math.sqrt(Math.max(0, ringR*ringR - ringY*ringY));
+        const ringY = -ringR + ring * (ringR * 2 / 5);
+        const ringRad = Math.sqrt(Math.max(0, ringR * ringR - ringY * ringY));
         ctx.beginPath();
         let first = true;
         for (let a = 0; a <= 48; a++) {
-          const angle = (a/48)*Math.PI*2;
-          const r = rot(ringRad*Math.cos(angle), ringY, ringRad*Math.sin(angle), rotX*0.3, rotY*0.2);
+          const angle = (a / 48) * Math.PI * 2;
+          const r = rot(ringRad * Math.cos(angle), ringY, ringRad * Math.sin(angle), rotX * 0.3, rotY * 0.2);
           const p = proj(r.x, r.y, r.z);
-          if (first) { ctx.moveTo(p.x, p.y); first=false; } else ctx.lineTo(p.x, p.y);
+          if (first) { ctx.moveTo(p.x, p.y); first = false; } else ctx.lineTo(p.x, p.y);
         }
         ctx.strokeStyle = "rgba(168,85,247,0.08)";
         ctx.lineWidth = 0.5;
@@ -2161,53 +2158,53 @@ function HeroCanvas() {
     setTimeout(() => draw(), 80);
 
     // Drag
-    canvas.addEventListener("mousedown", e => { isDragging=true; prevMX=e.clientX; prevMY=e.clientY; dVX=0; dVY=0; });
+    canvas.addEventListener("mousedown", e => { isDragging = true; prevMX = e.clientX; prevMY = e.clientY; dVX = 0; dVY = 0; });
     window.addEventListener("mousemove", e => {
       if (!isDragging) return;
-      dVY = (e.clientX-prevMX)*0.008; dVX = (e.clientY-prevMY)*0.008;
-      rotY += dVY; rotX += dVX; prevMX=e.clientX; prevMY=e.clientY;
+      dVY = (e.clientX - prevMX) * 0.008; dVX = (e.clientY - prevMY) * 0.008;
+      rotY += dVY; rotX += dVX; prevMX = e.clientX; prevMY = e.clientY;
     });
-    window.addEventListener("mouseup", () => { isDragging=false; });
-    canvas.addEventListener("touchstart", e => { isDragging=true; prevMX=e.touches[0].clientX; prevMY=e.touches[0].clientY; });
+    window.addEventListener("mouseup", () => { isDragging = false; });
+    canvas.addEventListener("touchstart", e => { isDragging = true; prevMX = e.touches[0].clientX; prevMY = e.touches[0].clientY; });
     canvas.addEventListener("touchmove", e => {
       if (!isDragging) return;
-      dVY=(e.touches[0].clientX-prevMX)*0.008; dVX=(e.touches[0].clientY-prevMY)*0.008;
-      rotY+=dVY; rotX+=dVX; prevMX=e.touches[0].clientX; prevMY=e.touches[0].clientY;
+      dVY = (e.touches[0].clientX - prevMX) * 0.008; dVX = (e.touches[0].clientY - prevMY) * 0.008;
+      rotY += dVY; rotX += dVX; prevMX = e.touches[0].clientX; prevMY = e.touches[0].clientY;
     });
-    canvas.addEventListener("touchend", () => { isDragging=false; });
+    canvas.addEventListener("touchend", () => { isDragging = false; });
 
     const handleResize = () => { cancelAnimationFrame(raf); setup(); draw(); };
     window.addEventListener("resize", handleResize);
-    document.addEventListener("visibilitychange", () => { if(document.visibilityState==="visible") draw(); });
+    document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") draw(); });
 
     return () => { cancelAnimationFrame(raf); window.removeEventListener("resize", handleResize); };
   }, []);
 
   return (
     <canvas ref={canvasRef} style={{
-      position:"absolute", inset:0, width:"100%", height:"100%",
-      zIndex:0, opacity:0.55, cursor:"grab", touchAction:"none",
-    }}/>
+      position: "absolute", inset: 0, width: "100%", height: "100%",
+      zIndex: 0, opacity: 0.55, cursor: "grab", touchAction: "none",
+    }} />
   );
 }
 
 
 function PortfolioApp() {
   return <><Portfolio /><AIChatbot />
-      <ScrollButtons />
-      <ScrollProgressBar />
-    </>;
+    <ScrollButtons />
+    <ScrollProgressBar />
+  </>;
 }
 
 // ─── SCROLL BUTTON ────────────────────────────────────────────────────────────
 function ScrollButtons() {
   const [atBottom, setAtBottom] = useState(false);
-  const [visible, setVisible]   = useState(true);
+  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     const onScroll = () => {
       const scrolled = window.scrollY;
-      const total    = document.body.scrollHeight - window.innerHeight;
+      const total = document.body.scrollHeight - window.innerHeight;
       if (total <= 0) return;
       const pct = scrolled / total;
       setAtBottom(pct > 0.85);
@@ -2220,7 +2217,7 @@ function ScrollButtons() {
 
   const handleClick = () => {
     if (atBottom) window.scrollTo({ top: 0, behavior: "smooth" });
-    else          window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+    else window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
   };
 
   return (
@@ -2255,8 +2252,8 @@ function ScrollButtons() {
     >
       <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
         {atBottom
-          ? <polyline points="18 15 12 9 6 15"/>
-          : <polyline points="6 9 12 15 18 9"/>
+          ? <polyline points="18 15 12 9 6 15" />
+          : <polyline points="6 9 12 15 18 9" />
         }
       </svg>
     </button>

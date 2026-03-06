@@ -1,0 +1,3 @@
+
+Removed from package.json
+"homepage": "https://JoshuaGashan.github.io/Portfolio",
